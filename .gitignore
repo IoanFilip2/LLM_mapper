@@ -1,0 +1,24 @@
+# Project-specific
+# Data (do not commit large or proprietary files)
+data/
+**/gene_kmer_embedding_batches/
+**/full_gene_embedding_batches/
+**/cds_gene_embedding_batches/
+*.npy
+*.npz
+*.pt
+*.bin
+*.bam
+*.bai
+*.fa
+*.fai
+*.gz
+*.csv
+# Python/Conda envs
+.env/
+llm-mapper/
+# Python cache
+__pycache__/
+*/__pycache__/
+.DS_Store
+*~

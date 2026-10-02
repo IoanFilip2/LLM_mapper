@@ -1,0 +1,22 @@
+{
+  "clusters": 5,
+  "connected_components": 1,
+  "database_integrity": "passed",
+  "edges": 461969,
+  "gc_eta_squared": 0.5590010907809693,
+  "gc_umap_spearman": [
+    -0.10441712204212351,
+    0.889782563396722
+  ],
+  "genes": 19217,
+  "isolates": 0,
+  "log10_cds_length_eta_squared": 0.023225234584081628,
+  "modularity_at_resolution": 0.7890124806144718,
+  "second_seed": 43,
+  "second_seed_adjusted_rand_index": 0.6710231482308643,
+  "second_seed_clusters": 5,
+  "silhouette_cosine": 0.15952979028224945,
+  "silhouette_sample_size": 2000,
+  "silhouette_seed": 42,
+  "singleton_clusters": 0
+}

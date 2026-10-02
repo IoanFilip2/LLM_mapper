@@ -1,0 +1,68 @@
+{
+  "reports": [
+    {
+      "algorithm": "striped",
+      "workers": 1,
+      "pairs": 35,
+      "seconds": 3.4983699590011383,
+      "dp_cells_both_strands": 13142272374,
+      "cell_updates_per_second": 3756684549.6673565
+    },
+    {
+      "algorithm": "striped",
+      "workers": 4,
+      "pairs": 35,
+      "seconds": 1.693792875004874,
+      "dp_cells_both_strands": 13142272374,
+      "cell_updates_per_second": 7759078791.710103
+    },
+    {
+      "algorithm": "striped",
+      "workers": 8,
+      "pairs": 35,
+      "seconds": 1.6800598749978235,
+      "dp_cells_both_strands": 13142272374,
+      "cell_updates_per_second": 7822502381.956491
+    },
+    {
+      "algorithm": "scan",
+      "workers": 1,
+      "pairs": 35,
+      "seconds": 5.613169790995016,
+      "dp_cells_both_strands": 13142272374,
+      "cell_updates_per_second": 2341328137.8168216
+    },
+    {
+      "algorithm": "scan",
+      "workers": 4,
+      "pairs": 35,
+      "seconds": 2.657191584003158,
+      "dp_cells_both_strands": 13142272374,
+      "cell_updates_per_second": 4945925786.126674
+    },
+    {
+      "algorithm": "scan",
+      "workers": 8,
+      "pairs": 35,
+      "seconds": 2.636517416998686,
+      "dp_cells_both_strands": 13142272374,
+      "cell_updates_per_second": 4984709104.99832
+    }
+  ],
+  "scoring": {
+    "match": 2,
+    "mismatch": -3,
+    "gap_open": 5,
+    "gap_extend": 1,
+    "both_strands": true,
+    "algorithm": "striped"
+  },
+  "input_signature": {
+    "gene_vectors_sha256": "bf4d8f9428bc00c3f6b5d9cf7f825220ee3d1a77dad337a5c4b1e6a1fa4f3d2a",
+    "fasta_sha256": "f5d472be4ce0386db9fcb9e53b9ada66a3521c2cab9b9d435ef8e9f23a8b0353",
+    "graph_sha256": "1529f2e5a2c4f6ce93eae51331d702234252ed345c9eeb5c4f582bb7f920f114",
+    "nodes_sha256": "b5032fbe1e8a1593bcd2531307772a15312cbbfddab02f61358ad418d64d6dd0",
+    "coordinates_sha256": "0e22e72b139cf9b20e0137cf8845c1afa1a625597f00ffd9638522fadc297813"
+  },
+  "note": "32 pair-cost quantiles plus the four most expensive pairs, unique union; one timed pass per setting after warmup. All raw scores agree exactly."
+}

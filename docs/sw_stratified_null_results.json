@@ -1,0 +1,112 @@
+{
+  "status": "complete",
+  "signature": {
+    "bins": 5,
+    "coordinates_sha256": "0e22e72b139cf9b20e0137cf8845c1afa1a625597f00ffd9638522fadc297813",
+    "fasta_sha256": "f5d472be4ce0386db9fcb9e53b9ada66a3521c2cab9b9d435ef8e9f23a8b0353",
+    "gene_vectors_sha256": "bf4d8f9428bc00c3f6b5d9cf7f825220ee3d1a77dad337a5c4b1e6a1fa4f3d2a",
+    "graph_sha256": "1529f2e5a2c4f6ce93eae51331d702234252ed345c9eeb5c4f582bb7f920f114",
+    "library_sha256": "dd58201431c8a3404ea93deed61157fdf756dc3d538a014f26235ef5c23c06ff",
+    "method_version": 1,
+    "nodes_sha256": "b5032fbe1e8a1593bcd2531307772a15312cbbfddab02f61358ad418d64d6dd0",
+    "null": "Gene-following permutations within marginal GC/log-length quantile bins crossed with exact degree",
+    "observed_csv_sha256": "1d99a41b75ccb62cc4a046bff59437037222478c5374cdae2df99241f814fc61",
+    "permutations": 100,
+    "pilot": 2,
+    "scoring": {
+      "algorithm": "striped",
+      "both_strands": true,
+      "gap_extend": 1,
+      "gap_open": 5,
+      "match": 2,
+      "mismatch": -3
+    },
+    "seed": 20260929
+  },
+  "global_and_cluster_means": {
+    "caveat": "Conditional random-label null; bins only approximately match GC/length. Cluster tests are descriptive post-selection. Gene BH q-values are exploratory; graph dependence and 100-permutation resolution limit inference.",
+    "genes_p_le_005": 8876,
+    "genes_positive_excess": 14474,
+    "genes_q_bh_le_005": 7817,
+    "minimum_p": 0.009900990099009901,
+    "permutations": 100,
+    "summaries": [
+      {
+        "cluster": "all",
+        "excess": 0.014075664534817263,
+        "genes": 19217,
+        "null_mean": 0.012178757394144838,
+        "null_p025": 0.012116244021987889,
+        "null_p975": 0.012238944059309868,
+        "observed_mean": 0.0262544219289621,
+        "p_enrichment": 0.009900990099009901
+      },
+      {
+        "cluster": "0",
+        "excess": 0.011806164667959801,
+        "genes": 8244,
+        "null_mean": 0.012766950129109738,
+        "null_p025": 0.012707303267076036,
+        "null_p975": 0.012849579287917384,
+        "observed_mean": 0.02457311479706954,
+        "p_enrichment": 0.009900990099009901
+      },
+      {
+        "cluster": "1",
+        "excess": 0.008556212994425919,
+        "genes": 8081,
+        "null_mean": 0.010983862515515258,
+        "null_p025": 0.01089955191626905,
+        "null_p975": 0.011094098757125378,
+        "observed_mean": 0.019540075509941177,
+        "p_enrichment": 0.009900990099009901
+      },
+      {
+        "cluster": "2",
+        "excess": 0.012345002559150933,
+        "genes": 1946,
+        "null_mean": 0.014147858760049562,
+        "null_p025": 0.013952822667452599,
+        "null_p975": 0.014304352854027147,
+        "observed_mean": 0.026492861319200495,
+        "p_enrichment": 0.009900990099009901
+      },
+      {
+        "cluster": "3",
+        "excess": 0.11475571684304588,
+        "genes": 643,
+        "null_mean": 0.015383317109465153,
+        "null_p025": 0.014551347160304292,
+        "null_p975": 0.016144148660604728,
+        "observed_mean": 0.13013903395251103,
+        "p_enrichment": 0.009900990099009901
+      },
+      {
+        "cluster": "4",
+        "excess": 0.020488335725348666,
+        "genes": 303,
+        "null_mean": 0.008596187929305046,
+        "null_p025": 0.008268466534292125,
+        "null_p975": 0.00902265204047333,
+        "observed_mean": 0.02908452365465371,
+        "p_enrichment": 0.009900990099009901
+      }
+    ]
+  },
+  "global_median": {
+    "exceedances": 0,
+    "fold_over_null_median": 1.2296743707890754,
+    "genes": 19217,
+    "null_max": 0.010883993647773172,
+    "null_mean_of_medians": 0.010848934356891264,
+    "null_median_of_medians": 0.010849115669665831,
+    "null_min": 0.010814499708860448,
+    "null_p025": 0.010819601502295662,
+    "null_p975": 0.010876194045441752,
+    "observed_median": 0.013340879484714229,
+    "p_enrichment": 0.009900990099009901,
+    "permutations": 100,
+    "statistic": "Median across genes of unweighted mean neighbor SW similarity; calculated separately for each permutation"
+  },
+  "total_permutation_seconds": 13483.23324316297
+}

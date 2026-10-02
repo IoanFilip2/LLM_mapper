@@ -1,0 +1,44 @@
+{
+  "sample_id": "NA19239",
+  "cohort": "wes_100bp_1000genomes",
+  "status": "source_download_complete",
+  "verification": "Downloader validated expected size where supplied and upstream MD5; local SHA-256 receipts recorded.",
+  "files": {
+    "NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.bam.bas": {
+      "etag": "\"34c-51fb050089c40\"",
+      "last_modified": "Mon, 14 Sep 2015 07:50:01 GMT",
+      "retrieved_at": "2026-09-28T04:40:41.604877+00:00",
+      "sha256": "723a6b05ac8a9377512866c70c4c242418980e94fb8c774ea3b2e30f7785d500",
+      "size": 844,
+      "upstream_md5": "4992ef04aaa3938c1aef1e7d8b6ef42e",
+      "upstream_sha256": null,
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/YRI/NA19239/exome_alignment/NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.bam.bas"
+    },
+    "NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.cram.crai": {
+      "etag": "\"367cc-524281baa7140\"",
+      "last_modified": "Tue, 10 Nov 2015 04:26:05 GMT",
+      "retrieved_at": "2026-09-28T04:40:40.113344+00:00",
+      "sha256": "cdf8ff334cf4afaa8b804b839dc2f54ecc693ecd54048cf622b4cd85483ab53e",
+      "size": 223180,
+      "upstream_md5": "344374fd789fe1eb09673c0f3b78a58b",
+      "upstream_sha256": null,
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/YRI/NA19239/exome_alignment/NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.cram.crai"
+    },
+    "NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.cram": {
+      "etag": "\"9e6609c4-524283dff8140\"",
+      "last_modified": "Tue, 10 Nov 2015 04:35:41 GMT",
+      "retrieved_at": "2026-09-28T04:40:37.974338+00:00",
+      "sha256": "e159c1789a9f376c5cecac1e7205f8914db6f78283f98bfdb5af54792c3757f9",
+      "size": 2657487300,
+      "upstream_md5": "264769ed107cd6ce16aa1dde2c58b922",
+      "upstream_sha256": null,
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/YRI/NA19239/exome_alignment/NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.cram"
+    }
+  },
+  "bam_conversion_complete": false,
+  "full_file_qc_complete": false,
+  "deferred": {
+    "NA20314": "reproducibility study",
+    "HG00419": "250-bp WGS evaluation"
+  }
+}

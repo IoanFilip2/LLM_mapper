@@ -1,0 +1,438 @@
+{
+  "dataset_audit": {
+    "all_pairs_bounds_and_negative_exclusion_checked": true,
+    "full_training_started": false,
+    "held_out_test_genes": [
+      "TP53",
+      "KRAS",
+      "HLA-A",
+      "HLA-B",
+      "HLA-C",
+      "EGFR",
+      "MYC",
+      "BRCA1",
+      "BRCA2",
+      "CDKN2A",
+      "BRAF",
+      "MDM2"
+    ],
+    "memory_storage_bytes": 8527827,
+    "production_checkpoint_count": 0,
+    "status": "passed",
+    "train_genes": 1000,
+    "train_negative_pairs": 200000,
+    "train_positive_pairs": 200000,
+    "training_positive_substrings_crossing_CDS_junction": 112233,
+    "validation_genes": 100,
+    "validation_triplets": 2000
+  },
+  "dataset_manifest": {
+    "artifacts": {
+      "genes.jsonl": "0403b01e963e54e1e5547a550cbff76b1113fc6c33455f99cf506bfda418f43e",
+      "train_triplets.npy": "f76aec111bffdee2851ef627781e601a074bd85d38b34ad15d5a0b39d7b74113",
+      "validation_triplets.npy": "776008a9f75df7f1902a9aacdaae744e9547abb0b7e8e1a1ef88e3e6ffaa9c75"
+    },
+    "base_model_config": {
+      "attention": "sdpa",
+      "backend": "gb",
+      "dtype": "float32",
+      "kmer": 0,
+      "layer": null,
+      "loader": null,
+      "max_length": 4000,
+      "model": "genbio-ai/GB.DNA-300M",
+      "pooling": "mean",
+      "revision": "a833c5602b0dad0728c0aeeecaf43086ebeb96ca"
+    },
+    "base_model_fingerprint": "2b43195ce645f6c7a0981a623ac85a92025050d89f2648044d8eedf1b61ba29d",
+    "chunk_length": 3998,
+    "counts": {
+      "train": {
+        "genes": 1000,
+        "negative_pairs": 200000,
+        "positive_pairs": 200000,
+        "triplets": 200000
+      },
+      "validation": {
+        "genes": 100,
+        "negative_pairs": 2000,
+        "positive_pairs": 2000,
+        "triplets": 2000
+      }
+    },
+    "donor_policy": "Same split as anchor, different gene, reject exact fragment or reverse-complement occurrence in anchor",
+    "fields": [
+      "anchor",
+      "positive_start",
+      "positive_length",
+      "negative_gene",
+      "negative_start",
+      "negative_length",
+      "positive_rc",
+      "negative_rc"
+    ],
+    "format_version": 1,
+    "held_out_genes": [
+      "TP53",
+      "KRAS",
+      "HLA-A",
+      "HLA-B",
+      "HLA-C",
+      "EGFR",
+      "MYC",
+      "BRCA1",
+      "BRCA2",
+      "CDKN2A",
+      "BRAF",
+      "MDM2"
+    ],
+    "max_length": 250,
+    "min_length": 50,
+    "positive_policy": "Uniform start in complete spliced CDS; exon-junction-spanning substrings are allowed",
+    "reverse_complement_augmentation": true,
+    "seed": 42,
+    "short_gene_policy": "Uniform length from min_length through min(max_length, CDS length); shorter genes excluded",
+    "source_fasta_sha256": "f5d472be4ce0386db9fcb9e53b9ada66a3521c2cab9b9d435ef8e9f23a8b0353",
+    "status": "complete",
+    "train_contexts": 1094,
+    "train_length_quantiles": {
+      "max": 43521.0,
+      "median": 1297.5,
+      "min": 75.0,
+      "p25": 813.0,
+      "p75": 2058.0,
+      "p95": 4753.499999999998,
+      "p99": 8535.779999999999
+    }
+  },
+  "experiment": {
+    "dataset": "data",
+    "experiment_id": "gbdna300m_cds_infonce_v001",
+    "full_training_started": false,
+    "future_training": "training",
+    "parent_model": "genbio-ai/GB.DNA-300M",
+    "parent_revision": "a833c5602b0dad0728c0aeeecaf43086ebeb96ca",
+    "pilot": "pilot_mps_b2",
+    "status": "prepared_and_piloted",
+    "training_config": "configs/finetuning/gbdna300m_cds_infonce_v001.json"
+  },
+  "pilot": {
+    "available_memory_at_end_bytes": 12959318016,
+    "dataset_manifest_sha256": "019a6bc44eb3f3eaef4ff14a4abb4c72a877fcc08f81d315e10cc674eace8191",
+    "device": "mps",
+    "full_training_started": false,
+    "mean_forward_backward_seconds_per_microbatch": 3.836988250199647,
+    "mean_optimizer_seconds": 0.4037680248991819,
+    "measured_microsteps": 12,
+    "measurements": [
+      {
+        "forward_backward_seconds": 1.5454590000008466,
+        "fragment_lengths": [
+          119,
+          103,
+          133,
+          220
+        ],
+        "gene_lengths": [
+          549,
+          495
+        ],
+        "gradient_norm": 7.817035675048828,
+        "loss": 1.3994169235229492,
+        "optimizer_seconds": 0.39829754200764,
+        "pair_indices": [
+          44408,
+          187315
+        ],
+        "peak_device_bytes": 5477859328,
+        "peak_rss_bytes": 1034174464,
+        "repeat": 0,
+        "stratum": "0"
+      },
+      {
+        "forward_backward_seconds": 0.9992638749972684,
+        "fragment_lengths": [
+          135,
+          207,
+          94,
+          175
+        ],
+        "gene_lengths": [
+          177,
+          363
+        ],
+        "gradient_norm": 9.27370548248291,
+        "loss": 0.5355068445205688,
+        "optimizer_seconds": 0.40065883300849237,
+        "pair_indices": [
+          14492,
+          87517
+        ],
+        "peak_device_bytes": 5503074304,
+        "peak_rss_bytes": 1058340864,
+        "repeat": 1,
+        "stratum": "0"
+      },
+      {
+        "forward_backward_seconds": 1.9006479999952717,
+        "fragment_lengths": [
+          112,
+          188,
+          219,
+          234
+        ],
+        "gene_lengths": [
+          1098,
+          807
+        ],
+        "gradient_norm": 4.407032489776611,
+        "loss": 1.3271889686584473,
+        "optimizer_seconds": 0.4009792919969186,
+        "pair_indices": [
+          137550,
+          92275
+        ],
+        "peak_device_bytes": 6577094656,
+        "peak_rss_bytes": 1082228736,
+        "repeat": 0,
+        "stratum": "1"
+      },
+      {
+        "forward_backward_seconds": 1.5255746670009103,
+        "fragment_lengths": [
+          155,
+          75,
+          73,
+          88
+        ],
+        "gene_lengths": [
+          828,
+          825
+        ],
+        "gradient_norm": 8.07581615447998,
+        "loss": 1.193648099899292,
+        "optimizer_seconds": 0.3997101249988191,
+        "pair_indices": [
+          183927,
+          78690
+        ],
+        "peak_device_bytes": 6575177728,
+        "peak_rss_bytes": 1105936384,
+        "repeat": 1,
+        "stratum": "1"
+      },
+      {
+        "forward_backward_seconds": 2.6490108340076404,
+        "fragment_lengths": [
+          210,
+          149,
+          140,
+          176
+        ],
+        "gene_lengths": [
+          1512,
+          1179
+        ],
+        "gradient_norm": 4.752431392669678,
+        "loss": 0.8823119401931763,
+        "optimizer_seconds": 0.40115145800518803,
+        "pair_indices": [
+          128378,
+          164837
+        ],
+        "peak_device_bytes": 6575505408,
+        "peak_rss_bytes": 1129758720,
+        "repeat": 0,
+        "stratum": "2"
+      },
+      {
+        "forward_backward_seconds": 2.5050333339895587,
+        "fragment_lengths": [
+          78,
+          128,
+          203,
+          52
+        ],
+        "gene_lengths": [
+          1428,
+          1230
+        ],
+        "gradient_norm": 6.249183177947998,
+        "loss": 1.3463361263275146,
+        "optimizer_seconds": 0.4000126659957459,
+        "pair_indices": [
+          167978,
+          60084
+        ],
+        "peak_device_bytes": 6575636480,
+        "peak_rss_bytes": 1153335296,
+        "repeat": 1,
+        "stratum": "2"
+      },
+      {
+        "forward_backward_seconds": 3.1993286249926314,
+        "fragment_lengths": [
+          146,
+          172,
+          63,
+          100
+        ],
+        "gene_lengths": [
+          1545,
+          1809
+        ],
+        "gradient_norm": 3.4770150184631348,
+        "loss": 1.2960132360458374,
+        "optimizer_seconds": 0.4113202500011539,
+        "pair_indices": [
+          87261,
+          48309
+        ],
+        "peak_device_bytes": 7657979904,
+        "peak_rss_bytes": 1177468928,
+        "repeat": 0,
+        "stratum": "3"
+      },
+      {
+        "forward_backward_seconds": 3.89095520900446,
+        "fragment_lengths": [
+          74,
+          202,
+          90,
+          182
+        ],
+        "gene_lengths": [
+          2283,
+          1551
+        ],
+        "gradient_norm": 13.181851387023926,
+        "loss": 1.0447025299072266,
+        "optimizer_seconds": 0.41077049999148585,
+        "pair_indices": [
+          189879,
+          707
+        ],
+        "peak_device_bytes": 8736210944,
+        "peak_rss_bytes": 1200963584,
+        "repeat": 1,
+        "stratum": "3"
+      },
+      {
+        "forward_backward_seconds": 8.865633333000005,
+        "fragment_lengths": [
+          179,
+          214,
+          138,
+          79
+        ],
+        "gene_lengths": [
+          3399,
+          3468
+        ],
+        "gradient_norm": 19.676517486572266,
+        "loss": 1.686797857284546,
+        "optimizer_seconds": 0.4086037499946542,
+        "pair_indices": [
+          114789,
+          76597
+        ],
+        "peak_device_bytes": 9820864512,
+        "peak_rss_bytes": 1226063872,
+        "repeat": 0,
+        "stratum": "4"
+      },
+      {
+        "forward_backward_seconds": 11.288975625007879,
+        "fragment_lengths": [
+          247,
+          76,
+          127,
+          126
+        ],
+        "gene_lengths": [
+          3828,
+          4230
+        ],
+        "gradient_norm": 9.468493461608887,
+        "loss": 1.0312228202819824,
+        "optimizer_seconds": 0.4061758329917211,
+        "pair_indices": [
+          110186,
+          127599
+        ],
+        "peak_device_bytes": 14827077632,
+        "peak_rss_bytes": 1253195776,
+        "repeat": 1,
+        "stratum": "4"
+      },
+      {
+        "forward_backward_seconds": 110.15240500000073,
+        "fragment_lengths": [
+          95,
+          195,
+          56,
+          249
+        ],
+        "gene_lengths": [
+          43521,
+          43521
+        ],
+        "gradient_norm": 13.387266159057617,
+        "loss": 1.1417059898376465,
+        "optimizer_seconds": 0.457187583000632,
+        "pair_indices": [
+          98809,
+          98806
+        ],
+        "peak_device_bytes": 21944958976,
+        "peak_rss_bytes": 895582208,
+        "repeat": 0,
+        "stratum": "longest"
+      }
+    ],
+    "memory_note": "Sampled process RSS and MPS driver allocations overlap in unified memory; do not sum. Peaks include optimizer states but may miss brief transients. Model load excluded.",
+    "microsteps_per_epoch": 100000,
+    "mode": "pilot_only",
+    "mps_memory_fraction_cap": 0.6,
+    "optimizer_steps_per_epoch": 12500,
+    "parameter_gradient_adam_floor_bytes": 4787404800,
+    "peak_device_bytes": 21944958976,
+    "peak_rss_bytes": 1253195776,
+    "physical_memory_bytes": 51539607552,
+    "pilot_weights_discarded": true,
+    "projected_compute_hours_range": [
+      75.58948548106753,
+      161.97746888800188
+    ],
+    "projected_training_compute_hours_per_epoch": 107.98497925866792,
+    "runtime_caveat": "Coarse projection from five equal-count gene-length strata, two samples per stratum. Excludes validation, checkpoint I/O and model loading; thermal/load changes and tail variability remain. Worst-length stress step reported separately.",
+    "settings": {
+      "checkpoint_every": 250,
+      "checkpointing": true,
+      "epochs": 1,
+      "gradient_accumulation": 8,
+      "learning_rate": 1e-05,
+      "microbatch": 2,
+      "seed": 42,
+      "temperature": 0.05,
+      "weight_decay": 0.01
+    },
+    "status": "complete",
+    "total_parameters": 299212800,
+    "trainable_parameters": 299212800,
+    "triplets": 200000
+  },
+  "training_config": {
+    "checkpoint_every": 250,
+    "checkpointing": true,
+    "epochs": 1,
+    "gradient_accumulation": 8,
+    "keep_checkpoints": 2,
+    "learning_rate": 1e-05,
+    "microbatch": 2,
+    "mps_memory_fraction": 0.6,
+    "seed": 42,
+    "temperature": 0.05,
+    "weight_decay": 0.01
+  }
+}

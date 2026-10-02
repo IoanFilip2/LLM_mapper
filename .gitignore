@@ -16,9 +16,15 @@ data/
 *.csv
 # Python/Conda envs
 .env/
+.venv/
+.pytest_cache/
+*.egg-info/
 llm-mapper/
 # Python cache
 __pycache__/
 */__pycache__/
 .DS_Store
 *~
+
+# Reproducible, potentially large model outputs (reports documented in docs/)
+results/

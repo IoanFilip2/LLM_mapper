@@ -1,0 +1,522 @@
+{
+  "assembly": "GRCh38",
+  "scope": "approved HGNC protein-coding genes on primary chromosomes",
+  "sequence_type": "full genomic gene span including introns; strand oriented",
+  "hgnc_approved_protein_coding": 19299,
+  "genes_written": 19217,
+  "total_gene_bases": 1318920029,
+  "inputs": {
+    "fasta": {
+      "path": "data/reference/GRCh38-ensembl-110/sources/GRCh38.primary_assembly.fa",
+      "sha256": "1e74081a49ceb9739cc14c812fbb8b3db978eb80ba8e5350beb80d8ad8dfef3b"
+    },
+    "gtf": {
+      "path": "data/reference/GRCh38-ensembl-110/sources/GRCh38.ensembl-110.gtf.gz",
+      "sha256": "5d3c363835bda4cf8ba025f728b190f69d454e894514bb3c81123efdb15ef1b9"
+    },
+    "hgnc": {
+      "path": "data/reference/GRCh38-ensembl-110/sources/hgnc_complete_set.tsv",
+      "sha256": "3e5da5b757afce6cae333d3e6c97a59ff3aadfb13da1c70f89d9a8f252b9e7ec"
+    }
+  },
+  "outputs": {
+    "genes.bed": "85dfedfe90106cca12858d5bb6bc7b9cca6eb95cd478c0cb5ecfc4ed414e4f97",
+    "genes.csv": "6539d3387ee6c1dfcd1bae961114b745d64158801e3124cce6bfa7d7fdf3859f",
+    "genes.fa": "e3353973826f64200bc7ccd991b68196785ac0790c1881cb11fb0939c9375f08"
+  },
+  "unresolved": [
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:27323",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "FAM153B"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:31957",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GAGE2B"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:31958",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GAGE2C"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:31959",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GAGE2D"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:4101",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GAGE4"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:4102",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GAGE5"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:4103",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GAGE6"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:4104",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GAGE7"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:4106",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GAGE8"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:4105",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GAGE12I"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:49416",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GOLGA6L19"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:4641",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GSTT1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:35418",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "GTF2H2C_2"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:4951",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "HLA-DRB3"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:4952",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "HLA-DRB4"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:5477",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "IGH"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:5715",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "IGK"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:5853",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "IGL"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:59231",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "KANGD1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:6330",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "KIR2DL2"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:16345",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "KIR2DL5A"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:16346",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "KIR2DL5B"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:6333",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "KIR2DS1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:6334",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "KIR2DS2"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:6335",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "KIR2DS3"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:6337",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "KIR2DS5"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:6340",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "KIR3DS1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:6604",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "LILRA3"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:44196",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "APOBEC3A_B"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:40162",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "MED14OS"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:17837",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "MSL3B"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:13384",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "MUC3B"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:7519",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "MUC8"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:31038",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "MYH16"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:8075",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "NXF5"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:8185",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "OR1D4"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:8191",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "OR1E3"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:27538",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "OR8U8"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:29166",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "OR8U9"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:31940",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "OR9G9"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:14833",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "OR51H1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:14856",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "OR51J1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:8662",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "PCDHA@"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:8679",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "PCDHB@"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:8695",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "PCDHG@"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:19400",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "PGBD3"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:38732",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "PRORY"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:32925",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "ATXN8"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:942",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "BAGE"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:15728",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "BAGE3"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:15730",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "BAGE4"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:15732",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "BAGE5"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:14878",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "BIRC8"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:9914",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "RBMY1C"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:56851",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "SCPPPQ1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:38749",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "SDIM1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:32934",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "SLCO1B7"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:58753",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "C4A_2"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:42398",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "C4B_2"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:28693",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "C10orf126"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:59156",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "SURMIR"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:20615",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "TAS2R2"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:19114",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "TAS2R33"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:19115",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "TAS2R36"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:18876",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "TAS2R45"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:32307",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "TMEM78"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:12027",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "TRA"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:12155",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "TRB"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:12252",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "TRD"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:12271",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "TRG"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:12529",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "UGT1A"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:10628",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "CCL3L1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:10631",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "CCL4L1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:24462",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "CLECL1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:37112",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "DDX11L13"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:43844",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "DEFB109C"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:30838",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "DEFB109D"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:37121",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "DNAH10OS"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:56772",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "DUSP13A"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:3079",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "DUX1"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:3081",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "DUX3"
+    },
+    {
+      "candidates": [],
+      "hgnc_id": "HGNC:3083",
+      "reason": "no_matching_primary_protein_coding_locus",
+      "symbol": "DUX5"
+    }
+  ],
+  "selection_policy": "Unique HGNC/Ensembl ID link takes precedence over symbol-only matches; unresolved loci are not fabricated or forced to reach 20,000."
+}

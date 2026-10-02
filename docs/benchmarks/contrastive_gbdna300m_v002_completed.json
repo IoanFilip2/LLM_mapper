@@ -1,0 +1,126 @@
+{
+  "summary": {
+    "status": "complete",
+    "optimizer_updates": 1563,
+    "microsteps": 12500,
+    "first50_mean_loss": 1.0125014571473003,
+    "last50_mean_loss": 0.24085207701679337,
+    "gradient_clipping_fraction": 0.9955214331413947,
+    "final_validation": {
+      "optimizer_step": 1563,
+      "mean_info_nce": 0.7375966052596385,
+      "within_batch_accuracy": 0.72,
+      "triplets": 25,
+      "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy"
+    },
+    "lowest_sampled_validation_loss": {
+      "optimizer_step": 1250,
+      "mean_info_nce": 0.5364123343561704,
+      "within_batch_accuracy": 0.76,
+      "triplets": 25,
+      "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy"
+    },
+    "memory_samples": 10500,
+    "sampled_driver_before_max_gb": 14.8078592,
+    "sampled_live_tensor_max_gb": 4.833574144,
+    "median_microbatch_interval_seconds": 3.3063780209995457,
+    "memory_log_invocations": 2,
+    "figures": [
+      "01_learning_curves",
+      "02_gradient_diagnostics",
+      "03_memory_cleanup",
+      "04_runtime_and_length",
+      "05_length_memory_and_learning_rate",
+      "06_attempt_comparison"
+    ]
+  },
+  "checkpoint_manifest": {
+    "base_model_fingerprint": "2b43195ce645f6c7a0981a623ac85a92025050d89f2648044d8eedf1b61ba29d",
+    "kind": "full_encoder_contrastive_finetune",
+    "requires_new_reference_vectors_and_umap": true,
+    "state": {
+      "epoch": 0,
+      "next_microstep": 12500,
+      "optimizer_step": 1563,
+      "signature": {
+        "dataset_sha256": "e2e78738eebe81c1f2cb0d730132f82a9dcbe63e24725d459e85cc1e315e9448",
+        "device": "mps",
+        "settings": {
+          "checkpoint_every": 25,
+          "checkpointing": true,
+          "epochs": 1,
+          "gradient_accumulation": 8,
+          "keep_checkpoints": 2,
+          "learning_rate": 1e-05,
+          "max_run_hours": 13.5,
+          "memory_profile": true,
+          "microbatch": 2,
+          "mps_cleanup": true,
+          "mps_memory_fraction": 0.6,
+          "seed": 42,
+          "temperature": 0.05,
+          "validation_every": 250,
+          "weight_decay": 0.01
+        }
+      },
+      "validation": {
+        "mean_info_nce": 0.7375966052596385,
+        "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy",
+        "triplets": 25,
+        "within_batch_accuracy": 0.72
+      }
+    },
+    "status": "complete",
+    "training_state_sha256": "1927ef5a1eaa9db49fe14fe847e6ad802f4609ca0998007db5bfea05cd2fa441",
+    "weight_sha256": "0fe34bd24bc666be421dad9dea0a92cb76a3482f82a4c582b4feb1ee6e6641de"
+  },
+  "validation_history": {
+    "250": {
+      "mean_info_nce": 0.7413834625711808,
+      "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy",
+      "triplets": 25,
+      "within_batch_accuracy": 0.68
+    },
+    "500": {
+      "mean_info_nce": 0.5863126321480825,
+      "within_batch_accuracy": 0.76,
+      "triplets": 25,
+      "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy"
+    },
+    "750": {
+      "mean_info_nce": 0.6804840392791308,
+      "within_batch_accuracy": 0.68,
+      "triplets": 25,
+      "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy"
+    },
+    "1000": {
+      "mean_info_nce": 0.7434793706410207,
+      "within_batch_accuracy": 0.72,
+      "triplets": 25,
+      "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy"
+    },
+    "1250": {
+      "mean_info_nce": 0.5364123343561704,
+      "within_batch_accuracy": 0.76,
+      "triplets": 25,
+      "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy"
+    },
+    "1500": {
+      "mean_info_nce": 0.7344151445879386,
+      "within_batch_accuracy": 0.64,
+      "triplets": 25,
+      "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy"
+    },
+    "1563": {
+      "mean_info_nce": 0.7375966052596385,
+      "within_batch_accuracy": 0.72,
+      "triplets": 25,
+      "note": "Small fixed validation subset; within-batch contrastive accuracy is not whole-reference mapping accuracy"
+    }
+  },
+  "completion": {
+    "status": "complete",
+    "updated_at_utc": "2026-10-01T07:19:03.129729+00:00",
+    "last_checkpoint": "checkpoint-001563"
+  }
+}

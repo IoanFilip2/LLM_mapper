@@ -1,0 +1,41 @@
+{
+  "pilot.json": {
+    "mean_seconds": 135.4971437080021,
+    "note": "Pilot permutations are included in the prespecified total; runtime includes alignment and aggregation. No outcome-based stopping.",
+    "pilot_permutations": 2,
+    "projected_remaining_hours": 3.688533356495613,
+    "projected_total_hours": 3.7638095474445032
+  },
+  "strata_qc.json": {
+    "bins_per_covariate": 5,
+    "boundaries_gc_log_length": [
+      [
+        0.44298245614035087,
+        0.49841897705544935,
+        0.558715466738038,
+        0.6149986114470514
+      ],
+      [
+        6.558197802812269,
+        6.981934677156389,
+        7.333023014386481,
+        7.760211111072297
+      ]
+    ],
+    "degree_matching": "exact",
+    "genes_with_at_least_five_positions": 17515,
+    "median_stratum_size": 22.0,
+    "singleton_genes": 439,
+    "strata": 1888
+  },
+  "pilot_verification.json": {
+    "permutation": 0,
+    "independently_recomputed_genes": [
+      "GAGE12B",
+      "TMA7B",
+      "PSMG4"
+    ],
+    "maximum_absolute_error": 3.469446951953614e-18,
+    "degree_preserved": true
+  }
+}

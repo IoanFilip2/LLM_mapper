@@ -1,0 +1,232 @@
+{
+  "cohort": "wes_100bp_1000genomes",
+  "decoding_reference": {
+    "filename": "GRCh38_full_analysis_set_plus_decoy_hla.fa",
+    "md5": null,
+    "sha256": "3b103f4742abfd54938fb0333e19ad067635c8eb86f1dbf0ce44b165c4292b50",
+    "size": 3263683042,
+    "url": "https://1000genomes.s3.amazonaws.com/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa"
+  },
+  "ena_query_url": "https://www.ebi.ac.uk/ena/portal/api/search?result=read_run&query=run_accession%3D%22SRR070473%22+OR+run_accession%3D%22SRR070477%22+OR+run_accession%3D%22SRR070566%22+OR+run_accession%3D%22SRR070772%22+OR+run_accession%3D%22SRR070779%22+OR+run_accession%3D%22SRR070838%22+OR+run_accession%3D%22SRR360391%22+OR+run_accession%3D%22SRR792097%22+OR+run_accession%3D%22SRR792159%22&fields=run_accession%2Cstudy_accession%2Csample_accession%2Clibrary_strategy%2Clibrary_layout%2Cfastq_ftp%2Cfastq_md5%2Cread_count%2Cbase_count&format=tsv&limit=0",
+  "samples": [
+    {
+      "alignment": {
+        "filename": "NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.cram",
+        "md5": "264769ed107cd6ce16aa1dde2c58b922",
+        "sha256": null,
+        "size": 2657487300,
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/YRI/NA19239/exome_alignment/NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.cram"
+      },
+      "assembly": "GRCh38DH",
+      "evidence": [
+        {
+          "ena_metadata": {
+            "base_count": "4667945400",
+            "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/SRR792/SRR792097/SRR792097_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR792/SRR792097/SRR792097_2.fastq.gz",
+            "fastq_md5": "0706484476ef8111057b99e29c9e9a54;029bf9d016ccd4e7589678fee85336b5",
+            "library_layout": "PAIRED",
+            "library_strategy": "WXS",
+            "read_count": "23339727",
+            "run_accession": "SRR792097",
+            "sample_accession": "SAMN00001695",
+            "study_accession": "PRJNA59839"
+          },
+          "fastq_prefix_probes": [
+            {
+              "length_histogram": {
+                "100": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR792/SRR792097/SRR792097_1.fastq.gz"
+            },
+            {
+              "length_histogram": {
+                "100": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR792/SRR792097/SRR792097_2.fastq.gz"
+            }
+          ],
+          "mean_aligned_query_length": 99.93119554495142,
+          "run_accession": "SRR792097",
+          "source": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/YRI/NA19239/exome_alignment/NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.bam.bas",
+          "total_reads": 52465062
+        },
+        {
+          "ena_metadata": {
+            "base_count": "4660944800",
+            "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/SRR792/SRR792159/SRR792159_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR792/SRR792159/SRR792159_2.fastq.gz",
+            "fastq_md5": "32c55085e2c4a75bf1abcdb3af2f486d;ef1469b08ac9e5045a6ce44a24fcb2a6",
+            "library_layout": "PAIRED",
+            "library_strategy": "WXS",
+            "read_count": "23304724",
+            "run_accession": "SRR792159",
+            "sample_accession": "SAMN00001695",
+            "study_accession": "PRJNA59839"
+          },
+          "fastq_prefix_probes": [
+            {
+              "length_histogram": {
+                "100": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR792/SRR792159/SRR792159_1.fastq.gz"
+            },
+            {
+              "length_histogram": {
+                "100": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR792/SRR792159/SRR792159_2.fastq.gz"
+            }
+          ],
+          "mean_aligned_query_length": 99.931215241524,
+          "run_accession": "SRR792159",
+          "source": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/YRI/NA19239/exome_alignment/NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.bam.bas",
+          "total_reads": 52374815
+        }
+      ],
+      "expected_read_length": 100,
+      "format": "cram",
+      "index": {
+        "filename": "NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.cram.crai",
+        "md5": "344374fd789fe1eb09673c0f3b78a58b",
+        "sha256": null,
+        "size": null,
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/YRI/NA19239/exome_alignment/NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.cram.crai"
+      },
+      "library_strategy": "WXS",
+      "population": "YRI",
+      "sample_id": "NA19239",
+      "statistics": {
+        "filename": "NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.bam.bas",
+        "md5": "4992ef04aaa3938c1aef1e7d8b6ef42e",
+        "sha256": null,
+        "size": null,
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/YRI/NA19239/exome_alignment/NA19239.alt_bwamem_GRCh38DH.20150826.YRI.exome.bam.bas"
+      },
+      "status": "selected",
+      "validation_note": "BAS mean length is candidate evidence only; full-file native query length QC is required after download"
+    },
+    {
+      "alignment": {
+        "filename": "NA20314.alt_bwamem_GRCh38DH.20150826.ASW.exome.cram",
+        "md5": "9f3bbd2f5d8cd89f25584e5b189dd8f5",
+        "sha256": null,
+        "size": 3104134902,
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/ASW/NA20314/exome_alignment/NA20314.alt_bwamem_GRCh38DH.20150826.ASW.exome.cram"
+      },
+      "assembly": "GRCh38DH",
+      "evidence": [
+        {
+          "ena_metadata": {
+            "base_count": "4920040600",
+            "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/SRR070/SRR070838/SRR070838_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR070/SRR070838/SRR070838_2.fastq.gz",
+            "fastq_md5": "9a8d133244ce24e065fd947354ad1fd3;7773b2fb1ca6023c0bf0255216aa0702",
+            "library_layout": "PAIRED",
+            "library_strategy": "WXS",
+            "read_count": "24600203",
+            "run_accession": "SRR070838",
+            "sample_accession": "SAMN00007851",
+            "study_accession": "PRJNA59835"
+          },
+          "fastq_prefix_probes": [
+            {
+              "length_histogram": {
+                "100": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR070/SRR070838/SRR070838_1.fastq.gz"
+            },
+            {
+              "length_histogram": {
+                "100": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR070/SRR070838/SRR070838_2.fastq.gz"
+            }
+          ],
+          "mean_aligned_query_length": 99.93605513461303,
+          "run_accession": "SRR070838",
+          "source": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/ASW/NA20314/exome_alignment/NA20314.alt_bwamem_GRCh38DH.20150826.ASW.exome.bam.bas",
+          "total_reads": 54280965
+        },
+        {
+          "ena_metadata": {
+            "base_count": "4882015600",
+            "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/SRR070/SRR070566/SRR070566_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR070/SRR070566/SRR070566_2.fastq.gz",
+            "fastq_md5": "c0d64bcb83f79c0b7a41e6c3e6e98d8c;dc566b6b6907dde749f200c0b1b36334",
+            "library_layout": "PAIRED",
+            "library_strategy": "WXS",
+            "read_count": "24410078",
+            "run_accession": "SRR070566",
+            "sample_accession": "SAMN00007851",
+            "study_accession": "PRJNA59835"
+          },
+          "fastq_prefix_probes": [
+            {
+              "length_histogram": {
+                "100": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR070/SRR070566/SRR070566_1.fastq.gz"
+            },
+            {
+              "length_histogram": {
+                "100": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR070/SRR070566/SRR070566_2.fastq.gz"
+            }
+          ],
+          "mean_aligned_query_length": 99.9338658488985,
+          "run_accession": "SRR070566",
+          "source": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/ASW/NA20314/exome_alignment/NA20314.alt_bwamem_GRCh38DH.20150826.ASW.exome.bam.bas",
+          "total_reads": 53870851
+        }
+      ],
+      "expected_read_length": 100,
+      "format": "cram",
+      "index": {
+        "filename": "NA20314.alt_bwamem_GRCh38DH.20150826.ASW.exome.cram.crai",
+        "md5": "f4b25a540d23ce9836d9a66aa4fef91d",
+        "sha256": null,
+        "size": null,
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/ASW/NA20314/exome_alignment/NA20314.alt_bwamem_GRCh38DH.20150826.ASW.exome.cram.crai"
+      },
+      "library_strategy": "WXS",
+      "population": "ASW",
+      "sample_id": "NA20314",
+      "statistics": {
+        "filename": "NA20314.alt_bwamem_GRCh38DH.20150826.ASW.exome.bam.bas",
+        "md5": "dd31af2808bee5d0113792a1d1534392",
+        "sha256": null,
+        "size": null,
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/ASW/NA20314/exome_alignment/NA20314.alt_bwamem_GRCh38DH.20150826.ASW.exome.bam.bas"
+      },
+      "status": "selected",
+      "validation_note": "BAS mean length is candidate evidence only; full-file native query length QC is required after download"
+    }
+  ],
+  "schema_version": 1,
+  "source_index_sha256": "7b11c1d8ac4cddb7f0577439e39596d3d6650a943bb780da7b4c5135a870c5c5",
+  "source_index_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/1000genomes.exome.GRCh38DH.alignment.index",
+  "selection_note": "Two native 100-bp WES samples, reduced from five on 2026-09-27. NA19239 and NA20314 have the smallest source CRAMs in the previously reviewed five-sample pool. The ENA query URL retains the original discovery provenance; only samples listed here are active.",
+  "decoding_reference_original_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa"
+}

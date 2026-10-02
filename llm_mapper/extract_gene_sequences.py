@@ -3,7 +3,7 @@ import csv
 from pathlib import Path
 
 def reverse_complement(seq: str) -> str:
-    lookup = str.maketrans("ACGTacgtNn", "TGCAtgcaNn")
+    lookup = str.maketrans("ACGTRYMKBDHVNacgtrymkbdhvn", "TGCAYRKMVHDBNtgcayrkmvhdbn")
     return seq.translate(lookup)[::-1]
 
 def get_gene_sequences(fasta_path, gene_csv, output_csv):

@@ -1,0 +1,99 @@
+{
+  "qc": {
+    "alignment_batch_seconds": 149.82890518079512,
+    "edge_cosine_sw_spearman": -0.4995073063571102,
+    "gene_mean_sw_quantiles": {
+      "max": 0.6600059439630221,
+      "median": 0.013340879484714229,
+      "min": 0.00036415534595076924,
+      "p25": 0.008753598984847347,
+      "p75": 0.02174606894072584,
+      "p95": 0.09311071386930168,
+      "p99": 0.2688116625749118
+    },
+    "gene_sw_gc_spearman": 0.1457009810427495,
+    "gene_sw_log_length_spearman": -0.7264944314577371,
+    "genes": 19217,
+    "isolates": 0,
+    "mean_gene_sw_similarity": 0.0262544219289621,
+    "pairs": 461969,
+    "reverse_complement_wins": 121345
+  },
+  "verification": {
+    "non_SIMD_reference_checks_on_full_CDS_pairs": [
+      89,
+      69411,
+      133308,
+      197324,
+      261979,
+      328696,
+      427690
+    ],
+    "sqlite_integrity": "ok",
+    "status": "passed",
+    "symmetric_sparse_scores": true,
+    "unique_edges": 461969,
+    "unique_genes": 19217,
+    "unweighted_and_weighted_CSV_means_recomputed": true,
+    "zero_self_loops": true
+  },
+  "signature": {
+    "coordinates_sha256": "0e22e72b139cf9b20e0137cf8845c1afa1a625597f00ffd9638522fadc297813",
+    "fasta_sha256": "f5d472be4ce0386db9fcb9e53b9ada66a3521c2cab9b9d435ef8e9f23a8b0353",
+    "gene_vectors_sha256": "bf4d8f9428bc00c3f6b5d9cf7f825220ee3d1a77dad337a5c4b1e6a1fa4f3d2a",
+    "graph_sha256": "1529f2e5a2c4f6ce93eae51331d702234252ed345c9eeb5c4f582bb7f920f114",
+    "nodes_sha256": "b5032fbe1e8a1593bcd2531307772a15312cbbfddab02f61358ad418d64d6dd0",
+    "parasail_c_version": [
+      2,
+      6,
+      2
+    ],
+    "parasail_library_sha256": "dd58201431c8a3404ea93deed61157fdf756dc3d538a014f26235ef5c23c06ff",
+    "parasail_python_version": "1.3.4",
+    "scoring": {
+      "algorithm": "striped",
+      "both_strands": true,
+      "gap_extend": 1,
+      "gap_open": 5,
+      "match": 2,
+      "mismatch": -3
+    }
+  },
+  "clusters": [
+    {
+      "cluster": "0",
+      "genes": "8244",
+      "mean_neighbor_sw": "0.02457311479706954",
+      "median_neighbor_sw": "0.014001081174243837",
+      "p95_neighbor_sw": "0.06460307700456958"
+    },
+    {
+      "cluster": "1",
+      "genes": "8081",
+      "mean_neighbor_sw": "0.019540075509941177",
+      "median_neighbor_sw": "0.011256928907351424",
+      "p95_neighbor_sw": "0.04657745149254501"
+    },
+    {
+      "cluster": "2",
+      "genes": "1946",
+      "mean_neighbor_sw": "0.026492861319200495",
+      "median_neighbor_sw": "0.017874086935473286",
+      "p95_neighbor_sw": "0.07536523051331236"
+    },
+    {
+      "cluster": "3",
+      "genes": "643",
+      "mean_neighbor_sw": "0.13013903395251103",
+      "median_neighbor_sw": "0.11301869784620812",
+      "p95_neighbor_sw": "0.3434158511492245"
+    },
+    {
+      "cluster": "4",
+      "genes": "303",
+      "mean_neighbor_sw": "0.02908452365465371",
+      "median_neighbor_sw": "0.009709147174864438",
+      "p95_neighbor_sw": "0.18818429192631783"
+    }
+  ]
+}

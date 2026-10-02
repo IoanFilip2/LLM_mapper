@@ -1,0 +1,497 @@
+{
+  "cds_bases": 33442183,
+  "coordinates": "BED/genomic and CDS offsets are 0-based half-open; gene start/end fields retain 1-based inclusive genomic locus",
+  "genes_written": 19217,
+  "inputs": {
+    "data/reference/GRCh38-ensembl-110/hgnc_genes/genes.csv": "6539d3387ee6c1dfcd1bae961114b745d64158801e3124cce6bfa7d7fdf3859f",
+    "data/reference/GRCh38-ensembl-110/sources/GRCh38.ensembl-110.gtf.gz": "5d3c363835bda4cf8ba025f728b190f69d454e894514bb3c81123efdb15ef1b9",
+    "data/reference/GRCh38-ensembl-110/sources/GRCh38.primary_assembly.fa": "1e74081a49ceb9739cc14c812fbb8b3db978eb80ba8e5350beb80d8ad8dfef3b"
+  },
+  "limitations": [
+    "CDS excludes UTR exons and alternative-only coding exons",
+    "Spliced CDS joins are transcript boundaries, not contiguous WES genomic sequence",
+    "Incomplete annotated CDS retained and counted; no invented bases"
+  ],
+  "outputs": {
+    "cds_blocks.bed": "f64013a2777db5392210ccdd7192e73d421078441a88d25b3a62b70c3e9f1ce8",
+    "cds_blocks.jsonl": "ad78b8ceea5399e6906f869c9d558dfaf96c0da68245fef13d60d354640c79eb",
+    "genes.csv": "bea7589bfbca2f048d912c0b43740c6f91616dc8589d97c97fa43c27ee2f49d7",
+    "genes.fa": "f5d472be4ce0386db9fcb9e53b9ada66a3521c2cab9b9d435ef8e9f23a8b0353"
+  },
+  "phase_policy": "All annotated CDS bases retained; phase is metadata, not trimmed from every exon",
+  "representation": "One spliced annotated CDS per HGNC gene; MANE Select, then Ensembl canonical, then longest CDS; ties by transcript ID",
+  "selection_counts": {
+    "Ensembl_canonical": 236,
+    "MANE_Select": 18981,
+    "annotated_partial_CDS": 11,
+    "length_not_multiple_of_three": 36
+  },
+  "source_genes": 19217,
+  "stop_codon_policy": "Only GTF CDS features; separate stop_codon features are not appended",
+  "unresolved": [],
+  "non_triplet_length_transcripts": [
+    {
+      "gene_symbol": "CNTNAP3C",
+      "length": 1477,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000636699"
+    },
+    {
+      "gene_symbol": "CYP2D7",
+      "length": 1550,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000433992"
+    },
+    {
+      "gene_symbol": "FAM246C",
+      "length": 695,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000652053"
+    },
+    {
+      "gene_symbol": "GAGE12B",
+      "length": 20,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_start_NF",
+        "mRNA_start_NF"
+      ],
+      "transcript_id": "ENST00000361446"
+    },
+    {
+      "gene_symbol": "GAGE2E",
+      "length": 331,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000621907"
+    },
+    {
+      "gene_symbol": "GPATCH4",
+      "length": 1336,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000368232"
+    },
+    {
+      "gene_symbol": "IFNL4",
+      "length": 394,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000634967"
+    },
+    {
+      "gene_symbol": "KIR2DS4",
+      "length": 890,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000339924"
+    },
+    {
+      "gene_symbol": "MT-CO3",
+      "length": 784,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000362079"
+    },
+    {
+      "gene_symbol": "MT-CYB",
+      "length": 1141,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000361789"
+    },
+    {
+      "gene_symbol": "MT-ND1",
+      "length": 956,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000361390"
+    },
+    {
+      "gene_symbol": "MT-ND2",
+      "length": 1042,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000361453"
+    },
+    {
+      "gene_symbol": "MT-ND3",
+      "length": 346,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000361227"
+    },
+    {
+      "gene_symbol": "MT-ND4",
+      "length": 1378,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000361381"
+    },
+    {
+      "gene_symbol": "OR10AC1",
+      "length": 976,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000439431"
+    },
+    {
+      "gene_symbol": "OR10J3",
+      "length": 940,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000649616"
+    },
+    {
+      "gene_symbol": "OR10J4",
+      "length": 935,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000504970"
+    },
+    {
+      "gene_symbol": "OR12D1",
+      "length": 944,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000514827"
+    },
+    {
+      "gene_symbol": "OR13C7",
+      "length": 959,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000424348"
+    },
+    {
+      "gene_symbol": "OR1P1",
+      "length": 994,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000571766"
+    },
+    {
+      "gene_symbol": "OR2B8",
+      "length": 938,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000432841"
+    },
+    {
+      "gene_symbol": "OR2T7",
+      "length": 949,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000641057"
+    },
+    {
+      "gene_symbol": "OR4K3",
+      "length": 947,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000425829"
+    },
+    {
+      "gene_symbol": "OR4Q2",
+      "length": 940,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000541415"
+    },
+    {
+      "gene_symbol": "OR52E1",
+      "length": 926,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000445557"
+    },
+    {
+      "gene_symbol": "OR5AC1",
+      "length": 925,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000429239"
+    },
+    {
+      "gene_symbol": "OR5AL1",
+      "length": 985,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000440231"
+    },
+    {
+      "gene_symbol": "OR5G3",
+      "length": 944,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000435756"
+    },
+    {
+      "gene_symbol": "OR5H8",
+      "length": 931,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000394191"
+    },
+    {
+      "gene_symbol": "PKD1L2",
+      "length": 7379,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000525539"
+    },
+    {
+      "gene_symbol": "POLR2J3",
+      "length": 823,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000513506"
+    },
+    {
+      "gene_symbol": "RYBP",
+      "length": 652,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_start_NF",
+        "mRNA_start_NF"
+      ],
+      "transcript_id": "ENST00000477973"
+    },
+    {
+      "gene_symbol": "SERPINA2",
+      "length": 928,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000553483"
+    },
+    {
+      "gene_symbol": "SIGLEC16",
+      "length": 1463,
+      "tags": [
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000602139"
+    },
+    {
+      "gene_symbol": "TMEM247",
+      "length": 659,
+      "tags": [
+        "CCDS",
+        "Ensembl_canonical",
+        "basic"
+      ],
+      "transcript_id": "ENST00000434431"
+    },
+    {
+      "gene_symbol": "USP17L23",
+      "length": 551,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000506619"
+    }
+  ],
+  "annotated_partial_transcripts": [
+    {
+      "gene_symbol": "CASP8AP2",
+      "length": 5892,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000551025"
+    },
+    {
+      "gene_symbol": "CNTNAP3C",
+      "length": 1477,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000636699"
+    },
+    {
+      "gene_symbol": "GAGE12B",
+      "length": 20,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_start_NF",
+        "mRNA_start_NF"
+      ],
+      "transcript_id": "ENST00000361446"
+    },
+    {
+      "gene_symbol": "GAGE2E",
+      "length": 331,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000621907"
+    },
+    {
+      "gene_symbol": "MUC2",
+      "length": 4182,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000675028"
+    },
+    {
+      "gene_symbol": "OR4F4",
+      "length": 969,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_start_NF",
+        "mRNA_start_NF"
+      ],
+      "transcript_id": "ENST00000650172"
+    },
+    {
+      "gene_symbol": "POLR2J3",
+      "length": 823,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000513506"
+    },
+    {
+      "gene_symbol": "RFLNB",
+      "length": 432,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_start_NF",
+        "mRNA_start_NF"
+      ],
+      "transcript_id": "ENST00000329099"
+    },
+    {
+      "gene_symbol": "RYBP",
+      "length": 652,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_start_NF",
+        "mRNA_start_NF"
+      ],
+      "transcript_id": "ENST00000477973"
+    },
+    {
+      "gene_symbol": "SERPINA2",
+      "length": 928,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000553483"
+    },
+    {
+      "gene_symbol": "USP17L23",
+      "length": 551,
+      "tags": [
+        "Ensembl_canonical",
+        "basic",
+        "cds_end_NF",
+        "mRNA_end_NF"
+      ],
+      "transcript_id": "ENST00000506619"
+    }
+  ],
+  "full_report_path": "data/reference/GRCh38-ensembl-110/hgnc_cds/report.json"
+}

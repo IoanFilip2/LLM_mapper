@@ -1,0 +1,117 @@
+{
+  "purpose": "Throughput and numerical checks on real gene windows; not mapping accuracy",
+  "seed": 42,
+  "model_config": {
+    "backend": "gb",
+    "model": "genbio-ai/GB.DNA-300M",
+    "revision": "a833c5602b0dad0728c0aeeecaf43086ebeb96ca",
+    "pooling": "mean",
+    "max_length": 4000,
+    "kmer": 0,
+    "layer": null,
+    "loader": null,
+    "dtype": "float32"
+  },
+  "comparisons": [
+    {
+      "device": "cpu",
+      "dtype": "float32",
+      "minimum_cosine_to_cpu_float32": 0.9999998807907104,
+      "maximum_relative_l2_to_cpu_float32": 0.0,
+      "passed": true,
+      "validation_lengths": [
+        100,
+        150,
+        250
+      ],
+      "sequences_per_length": 8
+    },
+    {
+      "device": "mps",
+      "dtype": "float32",
+      "minimum_cosine_to_cpu_float32": 0.9999998807907104,
+      "maximum_relative_l2_to_cpu_float32": 2.859119149434264e-06,
+      "passed": true,
+      "validation_lengths": [
+        100,
+        150,
+        250
+      ],
+      "sequences_per_length": 8
+    },
+    {
+      "device": "mps",
+      "dtype": "float16",
+      "minimum_cosine_to_cpu_float32": 0.9998992681503296,
+      "maximum_relative_l2_to_cpu_float32": 0.014943700283765793,
+      "passed": false,
+      "validation_lengths": [
+        100,
+        150,
+        250
+      ],
+      "sequences_per_length": 8
+    }
+  ],
+  "reports": [
+    {
+      "device": "cpu",
+      "dtype": "float32",
+      "batch_size": 4,
+      "sequences": 32,
+      "window_length": 250,
+      "repeat_seconds": [
+        4.361835375000737,
+        4.364545458000066
+      ],
+      "windows_per_second": 7.334082848867812,
+      "sampled_peak_rss_bytes": 1675329536,
+      "sampled_peak_device_bytes": 0
+    },
+    {
+      "device": "mps",
+      "dtype": "float32",
+      "batch_size": 4,
+      "sequences": 128,
+      "window_length": 250,
+      "repeat_seconds": [
+        5.229835832999015,
+        5.197604332999617
+      ],
+      "windows_per_second": 24.550608387545992,
+      "sampled_peak_rss_bytes": 942555136,
+      "sampled_peak_device_bytes": 2223767552
+    },
+    {
+      "device": "mps",
+      "dtype": "float32",
+      "batch_size": 16,
+      "sequences": 128,
+      "window_length": 250,
+      "repeat_seconds": [
+        4.478865416998815,
+        4.502357041999858
+      ],
+      "windows_per_second": 28.503914825481537,
+      "sampled_peak_rss_bytes": 943538176,
+      "sampled_peak_device_bytes": 2223767552
+    }
+  ],
+  "selected": {
+    "device": "mps",
+    "dtype": "float32",
+    "batch_size": 16,
+    "sequences": 128,
+    "window_length": 250,
+    "repeat_seconds": [
+      4.478865416998815,
+      4.502357041999858
+    ],
+    "windows_per_second": 28.503914825481537,
+    "sampled_peak_rss_bytes": 943538176,
+    "sampled_peak_device_bytes": 2223767552
+  },
+  "estimated_hours_for_5285180_windows": 51.505400733344835,
+  "memory_note": "RSS and MPS driver allocations overlap; do not sum. Sample interval 50 ms.",
+  "timing_note": "Two timed repeats after warmup; model loading excluded. Full run may be slower under sustained load."
+}

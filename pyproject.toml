@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-mapper"
+version = "0.2.0"
+description = "Streaming nucleotide embeddings and reference mapping"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "torch>=2.2,<3", "psutil>=5.9,<8"]
+
+[project.optional-dependencies]
+gb = ["transformers==4.38.0", "numpy>=1.26,<2", "einops>=0.8,<1"]
+hf = ["transformers>=4.38,<5"]
+bam = ["pysam>=0.22,<0.25"]
+prepare = ["pysam>=0.22,<0.25"]
+alignment = ["parasail==1.3.4"]
+test = ["pytest>=8,<10", "pysam>=0.22,<0.25"]
+
+visualize = ["numpy>=1.26,<2", "scipy>=1.14,<1.16", "scikit-learn>=1.6,<1.7",
+             "umap-learn==0.5.7", "matplotlib>=3.9,<3.10", "adjustText>=1.3,<1.4", "numba>=0.61,<0.62",
+             "networkx>=3.4,<4"]
+
+[project.scripts]
+llm-mapper = "llm_mapper.__main__:main"
+llm-mapper-prepare = "llm_mapper.preparation.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["llm_mapper*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: requires installed model dependencies and local pretrained weights"]

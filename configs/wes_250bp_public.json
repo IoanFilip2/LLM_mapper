@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "cohort": "wes_250bp_public",
+  "status": "pending_verified_sources",
+  "samples": [],
+  "reason": "No native 250-bp human WES alignment sources were verified. WXS archive labels alone are insufficient: inspected long-read candidates were targeted panels, and standard GIAB exomes were shorter-read libraries.",
+  "approved_alternative": "wgs_250bp_comparison.json (separate WGS comparison cohort; never labeled WES)"
+}

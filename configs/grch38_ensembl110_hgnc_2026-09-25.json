@@ -1,0 +1,26 @@
+{
+  "assembly": "GRCh38",
+  "ensembl_release": 110,
+  "hgnc_last_modified": "2026-09-25",
+  "sources": {
+    "fasta_gz": {
+      "url": "https://ftp.ensembl.org/pub/release-110/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz",
+      "filename": "GRCh38.primary_assembly.fa.gz",
+      "size": 881964081,
+      "sha256": "d8c3af0094a7bba6125763bad779ec18a81483c739c6ed122094bdf86c187b92"
+    },
+    "gtf_gz": {
+      "url": "https://ftp.ensembl.org/pub/release-110/gtf/homo_sapiens/Homo_sapiens.GRCh38.110.gtf.gz",
+      "filename": "GRCh38.ensembl-110.gtf.gz",
+      "size": 54325732,
+      "sha256": "5d3c363835bda4cf8ba025f728b190f69d454e894514bb3c81123efdb15ef1b9"
+    },
+    "hgnc": {
+      "url": "https://storage.googleapis.com/public-download-files/hgnc/tsv/tsv/hgnc_complete_set.txt",
+      "filename": "hgnc_complete_set.tsv",
+      "size": 16947244,
+      "sha256": "3e5da5b757afce6cae333d3e6c97a59ff3aadfb13da1c70f89d9a8f252b9e7ec"
+    }
+  },
+  "note": "HGNC URL is mutable. Preserve the downloaded snapshot; this lock intentionally rejects later versions instead of silently changing gene labels."
+}

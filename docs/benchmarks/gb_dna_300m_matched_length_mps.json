@@ -1,0 +1,137 @@
+{
+  "config": {
+    "backend": "gb",
+    "model": "genbio-ai/GB.DNA-300M",
+    "revision": "a833c5602b0dad0728c0aeeecaf43086ebeb96ca",
+    "pooling": "mean",
+    "max_length": 4000,
+    "kmer": 0,
+    "layer": null,
+    "loader": null,
+    "dtype": "float32",
+    "attention": "sdpa"
+  },
+  "reports": [
+    {
+      "length": 1500,
+      "batch_size": 2,
+      "sequences": 32,
+      "repeat_seconds": [
+        6.8363456669976586,
+        6.783740040998964
+      ],
+      "bases_per_second": 7048.413795490031,
+      "minimum_cosine_to_batch2": 0.9999998211860657,
+      "maximum_relative_l2_to_batch2": 0.0,
+      "passed": true,
+      "sampled_peak_rss_bytes": 911278080,
+      "sampled_peak_device_bytes": 2224095232
+    },
+    {
+      "length": 1500,
+      "batch_size": 4,
+      "sequences": 32,
+      "repeat_seconds": [
+        6.639933458005544,
+        6.732394708000356
+      ],
+      "bases_per_second": 7179.004194949671,
+      "minimum_cosine_to_batch2": 0.9999998211860657,
+      "maximum_relative_l2_to_batch2": 0.0,
+      "passed": true,
+      "sampled_peak_rss_bytes": 911589376,
+      "sampled_peak_device_bytes": 2224095232
+    },
+    {
+      "length": 1500,
+      "batch_size": 8,
+      "sequences": 32,
+      "repeat_seconds": [
+        6.626962249996723,
+        6.661976249997679
+      ],
+      "bases_per_second": 7224.0532981652705,
+      "minimum_cosine_to_batch2": 0.9999998211860657,
+      "maximum_relative_l2_to_batch2": 0.0,
+      "passed": true,
+      "sampled_peak_rss_bytes": 912015360,
+      "sampled_peak_device_bytes": 3297837056
+    },
+    {
+      "length": 1500,
+      "batch_size": 16,
+      "sequences": 32,
+      "repeat_seconds": [
+        6.625686500003212,
+        6.548329542005376
+      ],
+      "bases_per_second": 7287.071739846103,
+      "minimum_cosine_to_batch2": 0.9999998211860657,
+      "maximum_relative_l2_to_batch2": 0.0,
+      "passed": true,
+      "sampled_peak_rss_bytes": 912687104,
+      "sampled_peak_device_bytes": 4371578880
+    },
+    {
+      "length": 3998,
+      "batch_size": 2,
+      "sequences": 32,
+      "repeat_seconds": [
+        22.82038520900096,
+        23.4789141250003
+      ],
+      "bases_per_second": 5526.47672169183,
+      "minimum_cosine_to_batch2": 0.9999997615814209,
+      "maximum_relative_l2_to_batch2": 0.0,
+      "passed": true,
+      "sampled_peak_rss_bytes": 914964480,
+      "sampled_peak_device_bytes": 3298476032
+    },
+    {
+      "length": 3998,
+      "batch_size": 4,
+      "sequences": 32,
+      "repeat_seconds": [
+        23.452091250001104,
+        23.572591249998368
+      ],
+      "bases_per_second": 5441.227593615393,
+      "minimum_cosine_to_batch2": 0.9999997615814209,
+      "maximum_relative_l2_to_batch2": 0.0,
+      "passed": true,
+      "sampled_peak_rss_bytes": 915161088,
+      "sampled_peak_device_bytes": 3298476032
+    },
+    {
+      "length": 3998,
+      "batch_size": 8,
+      "sequences": 32,
+      "repeat_seconds": [
+        23.2508338750049,
+        23.283841124997707
+      ],
+      "bases_per_second": 5498.5234129170485,
+      "minimum_cosine_to_batch2": 0.9999997615814209,
+      "maximum_relative_l2_to_batch2": 0.0,
+      "passed": true,
+      "sampled_peak_rss_bytes": 915701760,
+      "sampled_peak_device_bytes": 5412405248
+    },
+    {
+      "length": 3998,
+      "batch_size": 16,
+      "sequences": 32,
+      "repeat_seconds": [
+        24.746190624995506,
+        25.12189333299466
+      ],
+      "bases_per_second": 5130.9771639823075,
+      "minimum_cosine_to_batch2": 0.9999997615814209,
+      "maximum_relative_l2_to_batch2": 0.0,
+      "passed": true,
+      "sampled_peak_rss_bytes": 917979136,
+      "sampled_peak_device_bytes": 8690253824
+    }
+  ],
+  "note": "32 actual CDS prefixes per length; no padding between sequences. Warmup then two synchronized repeats. RSS and driver memory overlap."
+}

@@ -1,0 +1,138 @@
+{
+  "purpose": "CDS-context inference performance and CPU/MPS numerical equivalence; not mapping accuracy",
+  "config": {
+    "backend": "gb",
+    "model": "genbio-ai/GB.DNA-300M",
+    "revision": "a833c5602b0dad0728c0aeeecaf43086ebeb96ca",
+    "pooling": "mean",
+    "max_length": 4000,
+    "kmer": 0,
+    "layer": null,
+    "loader": null,
+    "dtype": "float32",
+    "attention": "eager"
+  },
+  "validation_lengths": [
+    100,
+    150,
+    250,
+    1024,
+    3998
+  ],
+  "cpu_eager_validation_seconds": 7.164987209000174,
+  "checks": [
+    {
+      "attention": "eager",
+      "minimum_cosine_to_cpu_eager": 0.9999999403953552,
+      "maximum_relative_l2": 7.676713948967517e-07,
+      "passed": true
+    },
+    {
+      "attention": "sdpa",
+      "minimum_cosine_to_cpu_eager": 0.9999998807907104,
+      "maximum_relative_l2": 6.507405032607494e-07,
+      "passed": true
+    }
+  ],
+  "reports": [
+    {
+      "attention": "eager",
+      "dtype": "float32",
+      "device": "mps",
+      "batch_size": 1,
+      "contexts": 24,
+      "bases": 38817,
+      "repeat_seconds": [
+        13.008072791000814,
+        12.521050374998595
+      ],
+      "bases_per_second": 3040.9975107721566,
+      "sampled_peak_rss_bytes": 944308224,
+      "sampled_peak_device_bytes": 9053061120
+    },
+    {
+      "attention": "sdpa",
+      "dtype": "float32",
+      "device": "mps",
+      "batch_size": 1,
+      "contexts": 24,
+      "bases": 38817,
+      "repeat_seconds": [
+        6.945353249999243,
+        6.926190833000874
+      ],
+      "bases_per_second": 5596.637226214937,
+      "sampled_peak_rss_bytes": 944652288,
+      "sampled_peak_device_bytes": 2225782784
+    },
+    {
+      "attention": "sdpa",
+      "dtype": "float32",
+      "device": "mps",
+      "batch_size": 2,
+      "contexts": 24,
+      "bases": 38817,
+      "repeat_seconds": [
+        6.838946457999555,
+        6.898203124999782
+      ],
+      "bases_per_second": 5651.39074383214,
+      "sampled_peak_rss_bytes": 944832512,
+      "sampled_peak_device_bytes": 2225782784
+    },
+    {
+      "attention": "sdpa",
+      "dtype": "float32",
+      "device": "mps",
+      "batch_size": 4,
+      "contexts": 24,
+      "bases": 38817,
+      "repeat_seconds": [
+        7.266988917001072,
+        7.154700499999308
+      ],
+      "bases_per_second": 5383.1418605149365,
+      "sampled_peak_rss_bytes": 945405952,
+      "sampled_peak_device_bytes": 3299524608
+    },
+    {
+      "attention": "sdpa",
+      "dtype": "float32",
+      "device": "mps",
+      "batch_size": 8,
+      "contexts": 24,
+      "bases": 38817,
+      "repeat_seconds": [
+        8.861811291999402,
+        8.744436959001177
+      ],
+      "bases_per_second": 4409.457307043707,
+      "sampled_peak_rss_bytes": 946110464,
+      "sampled_peak_device_bytes": 5447008256
+    }
+  ],
+  "selected": {
+    "attention": "sdpa",
+    "dtype": "float32",
+    "device": "mps",
+    "batch_size": 2,
+    "contexts": 24,
+    "bases": 38817,
+    "repeat_seconds": [
+      6.838946457999555,
+      6.898203124999782
+    ],
+    "bases_per_second": 5651.39074383214,
+    "sampled_peak_rss_bytes": 944832512,
+    "sampled_peak_device_bytes": 2225782784
+  },
+  "total_contexts": 20852,
+  "context_length_quantiles": [
+    1.0,
+    1305.0,
+    3564.0,
+    3998.0
+  ],
+  "memory_note": "RSS and MPS driver allocation overlap; do not sum. 50-ms sampling; model load excluded.",
+  "sampling_note": "24 length-quantile contexts; throughput is indicative, not a whole-reference runtime guarantee."
+}

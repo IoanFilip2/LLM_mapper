@@ -1,0 +1,1109 @@
+{
+  "pipeline": {
+    "checkpoint": "results/finetuning/gbdna300m_exon_infonce_v002/training/checkpoint-001563",
+    "completed_at_utc": "2026-10-02T00:09:31.602481+00:00",
+    "reference_results": "results/gb_dna_300m_exon_infonce_v002_cds_2026-10-01",
+    "selection_source": "results/na19239_gb_dna_300m_retrieval/selection",
+    "status": "complete",
+    "sw_analysis": false,
+    "weight_sha256": "0fe34bd24bc666be421dad9dea0a92cb76a3482f82a4c582b4feb1ee6e6641de",
+    "wes_results": "results/na19239_gb_dna_300m_exon_infonce_v002_retrieval"
+  },
+  "database_verification": {
+    "checkpoint_blocks_verified": 1202,
+    "coding_bases": 33442183,
+    "database": "results/gb_dna_300m_exon_infonce_v002_cds_2026-10-01/vector_db",
+    "matrices": {
+      "gene": {
+        "dtype": "float32",
+        "norm_max": 1.0000001192092896,
+        "norm_min": 0.9999998211860657,
+        "sha256": "f5d1d73d091860d5067a5be7c48f607859056fba30da509c0faac8b601334dd4",
+        "shape": [
+          19217,
+          1024
+        ]
+      },
+      "window": {
+        "dtype": "float32",
+        "norm_max": 1.0000001192092896,
+        "norm_min": 0.9999998211860657,
+        "sha256": "66e5c3d9eede49b7824837cb033f6930d51b853bab51edb8dd6614f625e1dc81",
+        "shape": [
+          20852,
+          1024
+        ]
+      }
+    },
+    "model_fingerprint": "7ace55447a2bb667126bbc21da8c6e5525483f5e692d70de658076ac661188af",
+    "self_queries": 12,
+    "self_query_note": "Top similarity checked; identical vectors can tie across genes. This is storage/retrieval validation, not biological accuracy.",
+    "sqlite_integrity": "ok",
+    "status": "passed",
+    "verified_at": "2026-10-02T00:07:42.208995+00:00"
+  },
+  "cluster_qc": {
+    "clusters": 4,
+    "connected_components": 1,
+    "database_integrity": "passed",
+    "edges": 427360,
+    "gc_eta_squared": 0.5096746077563368,
+    "gc_umap_spearman": [
+      -0.6964903137694197,
+      0.5455459135363888
+    ],
+    "genes": 19217,
+    "isolates": 0,
+    "log10_cds_length_eta_squared": 0.024229067096519993,
+    "modularity_at_resolution": 0.8175927025480824,
+    "second_seed": 43,
+    "second_seed_adjusted_rand_index": 0.8009598571087309,
+    "second_seed_clusters": 5,
+    "silhouette_cosine": 0.19959263503551483,
+    "silhouette_sample_size": 2000,
+    "silhouette_seed": 42,
+    "singleton_clusters": 0
+  },
+  "cluster_summary": [
+    {
+      "cluster": "0",
+      "genes": "9652",
+      "internal_edges": "198217",
+      "connected_components": "1",
+      "gc_median": "0.5885057471264368",
+      "gc_q25": "0.5425470775250673",
+      "gc_q75": "0.6312218090417656",
+      "cds_length_median": "1269.0",
+      "mean_pairwise_cosine": "0.5393769024635693",
+      "boundary_weight_fraction": "0.06102056597693817",
+      "top_genes": "RYR1;MYO10;ITGAE;ITGA3;MYO7A;CPAMD8;POLR1A;FRMPD3;MYO15B;PLXDC1;SUPT6H;RYR3;SHROOM3;SEMA7A;PTPRU;DNAH1;CLSTN2;PTPRT;ADAMTS8;ACLY"
+    },
+    {
+      "cluster": "1",
+      "genes": "6435",
+      "internal_edges": "134613",
+      "connected_components": "1",
+      "gc_median": "0.4444444444444444",
+      "gc_q25": "0.41634592135324916",
+      "gc_q75": "0.4770586801400523",
+      "cds_length_median": "1479.0",
+      "mean_pairwise_cosine": "0.6059152258074136",
+      "boundary_weight_fraction": "0.07980631444757758",
+      "top_genes": "LYST;KMT2C;REV3L;MYCBP2;SETD2;BPTF;XRN1;KMT2A;WRN;WNK3;CHD9;CPLANE1;PIKFYVE;DOCK7;ARHGAP5;JMJD1C;SACS;HECTD1;KAT6B;PHF3"
+    },
+    {
+      "cluster": "2",
+      "genes": "2395",
+      "internal_edges": "49421",
+      "connected_components": "1",
+      "gc_median": "0.5260243632336655",
+      "gc_q25": "0.46153846153846156",
+      "gc_q75": "0.5949341957375311",
+      "cds_length_median": "972.0",
+      "mean_pairwise_cosine": "0.611626606445031",
+      "boundary_weight_fraction": "0.07198246048226364",
+      "top_genes": "SLC5A11;SLC38A5;OR10J5;OR4D5;OR11G2;SLC7A6;NPFFR1;OR2F2;NPBWR2;OR2L2;OPN1MW2;OR11H7;OPN1MW3;OR6F1;SLC13A3;SLC22A5;NPY1R;SLC13A2;RXFP3;XKR7"
+    },
+    {
+      "cluster": "3",
+      "genes": "735",
+      "internal_edges": "14463",
+      "connected_components": "1",
+      "gc_median": "0.4852870236372407",
+      "gc_q25": "0.4135553564317005",
+      "gc_q75": "0.5746393455834946",
+      "cds_length_median": "1620.0",
+      "mean_pairwise_cosine": "0.6987817067133756",
+      "boundary_weight_fraction": "0.07617398266573805",
+      "top_genes": "ZNF44;ZNF12;ZNF836;ZNF81;ZNF699;ZNF616;ZNF442;KRTAP1-3;ZNF567;ZNF555;ZNF823;ZNF320;ZNF235;ZNF615;ZNF226;ZNF528;ZNF439;ZNF700;ZNF334;KRTAP1-1"
+    }
+  ],
+  "retrieval": {
+    "Base": {
+      "all_hgnc": {
+        "accuracy": 0.0,
+        "candidate_genes": 19217,
+        "correct": 0,
+        "macro_sensitivity": 0.0,
+        "mean_reciprocal_rank": 0.006406763977907744,
+        "per_gene": [
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "TP53",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 73,
+            "fp": 0,
+            "gene_symbol": "KRAS",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 73,
+            "tn": 862,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 29,
+            "fp": 0,
+            "gene_symbol": "HLA-A",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 29,
+            "tn": 906,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "HLA-B",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 4,
+            "fp": 0,
+            "gene_symbol": "HLA-C",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 4,
+            "tn": 931,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "EGFR",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "MYC",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "BRCA1",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "BRCA2",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 29,
+            "fp": 0,
+            "gene_symbol": "CDKN2A",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 29,
+            "tn": 906,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "BRAF",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 1,
+            "gene_symbol": "MDM2",
+            "precision": 0.0,
+            "sensitivity": 0.0,
+            "specificity": 0.9988023952095808,
+            "support": 100,
+            "tn": 834,
+            "tp": 0
+          }
+        ],
+        "reads": 935,
+        "specificity_scope": "One-versus-rest among sampled target-gene reads only; not genome-wide specificity",
+        "top100_accuracy": 0.07807486631016043,
+        "top250_accuracy": 0.1304812834224599,
+        "top50_accuracy": 0.05454545454545454,
+        "top5_accuracy": 0.0074866310160427805
+      },
+      "targets_only": {
+        "accuracy": 0.32834224598930484,
+        "candidate_genes": 12,
+        "correct": 307,
+        "macro_sensitivity": 0.31204888993859237,
+        "mean_reciprocal_rank": 0.5338006111535524,
+        "per_gene": [
+          {
+            "f1": 0.39655172413793105,
+            "fn": 8,
+            "fp": 272,
+            "gene_symbol": "TP53",
+            "precision": 0.25274725274725274,
+            "sensitivity": 0.92,
+            "specificity": 0.6742514970059881,
+            "support": 100,
+            "tn": 563,
+            "tp": 92
+          },
+          {
+            "f1": 0.45248868778280543,
+            "fn": 23,
+            "fp": 98,
+            "gene_symbol": "KRAS",
+            "precision": 0.33783783783783783,
+            "sensitivity": 0.684931506849315,
+            "specificity": 0.8863109048723898,
+            "support": 73,
+            "tn": 764,
+            "tp": 50
+          },
+          {
+            "f1": 0.0,
+            "fn": 29,
+            "fp": 8,
+            "gene_symbol": "HLA-A",
+            "precision": 0.0,
+            "sensitivity": 0.0,
+            "specificity": 0.9911699779249448,
+            "support": 29,
+            "tn": 898,
+            "tp": 0
+          },
+          {
+            "f1": 0.012195121951219513,
+            "fn": 99,
+            "fp": 63,
+            "gene_symbol": "HLA-B",
+            "precision": 0.015625,
+            "sensitivity": 0.01,
+            "specificity": 0.9245508982035928,
+            "support": 100,
+            "tn": 772,
+            "tp": 1
+          },
+          {
+            "f1": 0.0,
+            "fn": 4,
+            "fp": 31,
+            "gene_symbol": "HLA-C",
+            "precision": 0.0,
+            "sensitivity": 0.0,
+            "specificity": 0.966702470461869,
+            "support": 4,
+            "tn": 900,
+            "tp": 0
+          },
+          {
+            "f1": 0.08,
+            "fn": 95,
+            "fp": 20,
+            "gene_symbol": "EGFR",
+            "precision": 0.2,
+            "sensitivity": 0.05,
+            "specificity": 0.9760479041916168,
+            "support": 100,
+            "tn": 815,
+            "tp": 5
+          },
+          {
+            "f1": 0.4626865671641791,
+            "fn": 69,
+            "fp": 3,
+            "gene_symbol": "MYC",
+            "precision": 0.9117647058823529,
+            "sensitivity": 0.31,
+            "specificity": 0.9964071856287425,
+            "support": 100,
+            "tn": 832,
+            "tp": 31
+          },
+          {
+            "f1": 0.3333333333333333,
+            "fn": 70,
+            "fp": 50,
+            "gene_symbol": "BRCA1",
+            "precision": 0.375,
+            "sensitivity": 0.3,
+            "specificity": 0.9401197604790419,
+            "support": 100,
+            "tn": 785,
+            "tp": 30
+          },
+          {
+            "f1": 0.5189873417721519,
+            "fn": 59,
+            "fp": 17,
+            "gene_symbol": "BRCA2",
+            "precision": 0.7068965517241379,
+            "sensitivity": 0.41,
+            "specificity": 0.9796407185628743,
+            "support": 100,
+            "tn": 818,
+            "tp": 41
+          },
+          {
+            "f1": 0.7142857142857143,
+            "fn": 9,
+            "fp": 7,
+            "gene_symbol": "CDKN2A",
+            "precision": 0.7407407407407407,
+            "sensitivity": 0.6896551724137931,
+            "specificity": 0.9922737306843267,
+            "support": 29,
+            "tn": 899,
+            "tp": 20
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 5,
+            "gene_symbol": "BRAF",
+            "precision": 0.0,
+            "sensitivity": 0.0,
+            "specificity": 0.9940119760479041,
+            "support": 100,
+            "tn": 830,
+            "tp": 0
+          },
+          {
+            "f1": 0.387434554973822,
+            "fn": 63,
+            "fp": 54,
+            "gene_symbol": "MDM2",
+            "precision": 0.4065934065934066,
+            "sensitivity": 0.37,
+            "specificity": 0.9353293413173652,
+            "support": 100,
+            "tn": 781,
+            "tp": 37
+          }
+        ],
+        "reads": 935,
+        "specificity_scope": "One-versus-rest among sampled target-gene reads only; not genome-wide specificity",
+        "top100_accuracy": 1.0,
+        "top250_accuracy": 1.0,
+        "top50_accuracy": 1.0,
+        "top5_accuracy": 0.8652406417112299
+      }
+    },
+    "Fine-tuned v002": {
+      "all_hgnc": {
+        "accuracy": 0.0053475935828877,
+        "candidate_genes": 19217,
+        "correct": 5,
+        "macro_sensitivity": 0.01028735632183908,
+        "mean_reciprocal_rank": 0.02195895422212741,
+        "per_gene": [
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 1,
+            "gene_symbol": "TP53",
+            "precision": 0.0,
+            "sensitivity": 0.0,
+            "specificity": 0.9988023952095808,
+            "support": 100,
+            "tn": 834,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 73,
+            "fp": 0,
+            "gene_symbol": "KRAS",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 73,
+            "tn": 862,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 29,
+            "fp": 0,
+            "gene_symbol": "HLA-A",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 29,
+            "tn": 906,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "HLA-B",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 4,
+            "fp": 0,
+            "gene_symbol": "HLA-C",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 4,
+            "tn": 931,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "EGFR",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "MYC",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.01834862385321101,
+            "fn": 99,
+            "fp": 8,
+            "gene_symbol": "BRCA1",
+            "precision": 0.1111111111111111,
+            "sensitivity": 0.01,
+            "specificity": 0.9904191616766467,
+            "support": 100,
+            "tn": 827,
+            "tp": 1
+          },
+          {
+            "f1": 0.018691588785046728,
+            "fn": 99,
+            "fp": 6,
+            "gene_symbol": "BRCA2",
+            "precision": 0.14285714285714285,
+            "sensitivity": 0.01,
+            "specificity": 0.9928143712574851,
+            "support": 100,
+            "tn": 829,
+            "tp": 1
+          },
+          {
+            "f1": 0.1875,
+            "fn": 26,
+            "fp": 0,
+            "gene_symbol": "CDKN2A",
+            "precision": 1.0,
+            "sensitivity": 0.10344827586206896,
+            "specificity": 1.0,
+            "support": 29,
+            "tn": 906,
+            "tp": 3
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "BRAF",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 0,
+            "gene_symbol": "MDM2",
+            "precision": null,
+            "sensitivity": 0.0,
+            "specificity": 1.0,
+            "support": 100,
+            "tn": 835,
+            "tp": 0
+          }
+        ],
+        "reads": 935,
+        "specificity_scope": "One-versus-rest among sampled target-gene reads only; not genome-wide specificity",
+        "top100_accuracy": 0.21497326203208555,
+        "top250_accuracy": 0.29197860962566846,
+        "top50_accuracy": 0.14331550802139037,
+        "top5_accuracy": 0.031016042780748664
+      },
+      "targets_only": {
+        "accuracy": 0.3839572192513369,
+        "candidate_genes": 12,
+        "correct": 359,
+        "macro_sensitivity": 0.34864509526058884,
+        "mean_reciprocal_rank": 0.5741940412528649,
+        "per_gene": [
+          {
+            "f1": 0.42071197411003236,
+            "fn": 35,
+            "fp": 144,
+            "gene_symbol": "TP53",
+            "precision": 0.31100478468899523,
+            "sensitivity": 0.65,
+            "specificity": 0.8275449101796407,
+            "support": 100,
+            "tn": 691,
+            "tp": 65
+          },
+          {
+            "f1": 0.5581395348837209,
+            "fn": 25,
+            "fp": 51,
+            "gene_symbol": "KRAS",
+            "precision": 0.48484848484848486,
+            "sensitivity": 0.6575342465753424,
+            "specificity": 0.9408352668213457,
+            "support": 73,
+            "tn": 811,
+            "tp": 48
+          },
+          {
+            "f1": 0.0,
+            "fn": 29,
+            "fp": 11,
+            "gene_symbol": "HLA-A",
+            "precision": 0.0,
+            "sensitivity": 0.0,
+            "specificity": 0.9878587196467992,
+            "support": 29,
+            "tn": 895,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 100,
+            "fp": 54,
+            "gene_symbol": "HLA-B",
+            "precision": 0.0,
+            "sensitivity": 0.0,
+            "specificity": 0.9353293413173652,
+            "support": 100,
+            "tn": 781,
+            "tp": 0
+          },
+          {
+            "f1": 0.0,
+            "fn": 4,
+            "fp": 19,
+            "gene_symbol": "HLA-C",
+            "precision": 0.0,
+            "sensitivity": 0.0,
+            "specificity": 0.9795918367346939,
+            "support": 4,
+            "tn": 912,
+            "tp": 0
+          },
+          {
+            "f1": 0.2589928057553957,
+            "fn": 82,
+            "fp": 21,
+            "gene_symbol": "EGFR",
+            "precision": 0.46153846153846156,
+            "sensitivity": 0.18,
+            "specificity": 0.9748502994011976,
+            "support": 100,
+            "tn": 814,
+            "tp": 18
+          },
+          {
+            "f1": 0.6455696202531646,
+            "fn": 49,
+            "fp": 7,
+            "gene_symbol": "MYC",
+            "precision": 0.8793103448275862,
+            "sensitivity": 0.51,
+            "specificity": 0.9916167664670659,
+            "support": 100,
+            "tn": 828,
+            "tp": 51
+          },
+          {
+            "f1": 0.40869565217391307,
+            "fn": 53,
+            "fp": 83,
+            "gene_symbol": "BRCA1",
+            "precision": 0.36153846153846153,
+            "sensitivity": 0.47,
+            "specificity": 0.9005988023952096,
+            "support": 100,
+            "tn": 752,
+            "tp": 47
+          },
+          {
+            "f1": 0.5234375,
+            "fn": 33,
+            "fp": 89,
+            "gene_symbol": "BRCA2",
+            "precision": 0.42948717948717946,
+            "sensitivity": 0.67,
+            "specificity": 0.8934131736526946,
+            "support": 100,
+            "tn": 746,
+            "tp": 67
+          },
+          {
+            "f1": 0.6538461538461539,
+            "fn": 12,
+            "fp": 6,
+            "gene_symbol": "CDKN2A",
+            "precision": 0.7391304347826086,
+            "sensitivity": 0.5862068965517241,
+            "specificity": 0.9933774834437086,
+            "support": 29,
+            "tn": 900,
+            "tp": 17
+          },
+          {
+            "f1": 0.2857142857142857,
+            "fn": 69,
+            "fp": 86,
+            "gene_symbol": "BRAF",
+            "precision": 0.26495726495726496,
+            "sensitivity": 0.31,
+            "specificity": 0.8970059880239521,
+            "support": 100,
+            "tn": 749,
+            "tp": 31
+          },
+          {
+            "f1": 0.25,
+            "fn": 85,
+            "fp": 5,
+            "gene_symbol": "MDM2",
+            "precision": 0.75,
+            "sensitivity": 0.15,
+            "specificity": 0.9940119760479041,
+            "support": 100,
+            "tn": 830,
+            "tp": 15
+          }
+        ],
+        "reads": 935,
+        "specificity_scope": "One-versus-rest among sampled target-gene reads only; not genome-wide specificity",
+        "top100_accuracy": 1.0,
+        "top250_accuracy": 1.0,
+        "top50_accuracy": 1.0,
+        "top5_accuracy": 0.8663101604278075
+      }
+    }
+  },
+  "read_verification": {
+    "AS_histogram": {
+      "100": 935
+    },
+    "NM_histogram": {
+      "0": 935
+    },
+    "exact_substrings_of_selected_CDS": 935,
+    "full_CDS_positive_controls": [
+      {
+        "cosine_to_saved_vector": 1.0,
+        "gene_symbol": "TP53",
+        "predicted_gene": "TP53"
+      },
+      {
+        "cosine_to_saved_vector": 0.9999998807907104,
+        "gene_symbol": "KRAS",
+        "predicted_gene": "KRAS"
+      },
+      {
+        "cosine_to_saved_vector": 0.9999999403953552,
+        "gene_symbol": "CDKN2A",
+        "predicted_gene": "CDKN2A"
+      }
+    ],
+    "independent_dot_product_queries_verified": 3,
+    "mean_base_quality_below20": 3,
+    "mean_base_quality_below30": 45,
+    "minimum_mapq": 38,
+    "minimum_mean_base_quality": 6.0,
+    "positive_control_device": "cpu",
+    "reads": 935,
+    "unique_read_ids": 935,
+    "unique_sequences": 866,
+    "unique_templates": 894
+  },
+  "q30": {
+    "all_hgnc": {
+      "accuracy": 0.0033707865168539327,
+      "correct": 3,
+      "macro_sensitivity": 0.005034013605442177,
+      "per_gene": [
+        {
+          "f1": 0.0,
+          "fn": 92,
+          "fp": 1,
+          "gene_symbol": "TP53",
+          "precision": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 0.9987468671679198,
+          "support": 92,
+          "tn": 797,
+          "tp": 0
+        },
+        {
+          "f1": 0.0,
+          "fn": 72,
+          "fp": 0,
+          "gene_symbol": "KRAS",
+          "precision": null,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "support": 72,
+          "tn": 818,
+          "tp": 0
+        },
+        {
+          "f1": 0.0,
+          "fn": 25,
+          "fp": 0,
+          "gene_symbol": "HLA-A",
+          "precision": null,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "support": 25,
+          "tn": 865,
+          "tp": 0
+        },
+        {
+          "f1": 0.0,
+          "fn": 94,
+          "fp": 0,
+          "gene_symbol": "HLA-B",
+          "precision": null,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "support": 94,
+          "tn": 796,
+          "tp": 0
+        },
+        {
+          "f1": 0.0,
+          "fn": 4,
+          "fp": 0,
+          "gene_symbol": "HLA-C",
+          "precision": null,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "support": 4,
+          "tn": 886,
+          "tp": 0
+        },
+        {
+          "f1": 0.0,
+          "fn": 95,
+          "fp": 0,
+          "gene_symbol": "EGFR",
+          "precision": null,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "support": 95,
+          "tn": 795,
+          "tp": 0
+        },
+        {
+          "f1": 0.0,
+          "fn": 93,
+          "fp": 0,
+          "gene_symbol": "MYC",
+          "precision": null,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "support": 93,
+          "tn": 797,
+          "tp": 0
+        },
+        {
+          "f1": 0.018691588785046728,
+          "fn": 97,
+          "fp": 8,
+          "gene_symbol": "BRCA1",
+          "precision": 0.1111111111111111,
+          "sensitivity": 0.01020408163265306,
+          "specificity": 0.98989898989899,
+          "support": 98,
+          "tn": 784,
+          "tp": 1
+        },
+        {
+          "f1": 0.01904761904761905,
+          "fn": 97,
+          "fp": 6,
+          "gene_symbol": "BRCA2",
+          "precision": 0.14285714285714285,
+          "sensitivity": 0.01020408163265306,
+          "specificity": 0.9924242424242424,
+          "support": 98,
+          "tn": 786,
+          "tp": 1
+        },
+        {
+          "f1": 0.07692307692307693,
+          "fn": 24,
+          "fp": 0,
+          "gene_symbol": "CDKN2A",
+          "precision": 1.0,
+          "sensitivity": 0.04,
+          "specificity": 1.0,
+          "support": 25,
+          "tn": 865,
+          "tp": 1
+        },
+        {
+          "f1": 0.0,
+          "fn": 95,
+          "fp": 0,
+          "gene_symbol": "BRAF",
+          "precision": null,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "support": 95,
+          "tn": 795,
+          "tp": 0
+        },
+        {
+          "f1": 0.0,
+          "fn": 99,
+          "fp": 0,
+          "gene_symbol": "MDM2",
+          "precision": null,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "support": 99,
+          "tn": 791,
+          "tp": 0
+        }
+      ],
+      "reads": 890,
+      "selection_note": "Post-selection mean-base-Q>=30 sensitivity subset of the same sample; no replacement reads or new embeddings",
+      "specificity_scope": "One-versus-rest among sampled target-gene reads only; not genome-wide specificity"
+    },
+    "targets_only": {
+      "accuracy": 0.3865168539325843,
+      "correct": 344,
+      "macro_sensitivity": 0.3484387318238118,
+      "per_gene": [
+        {
+          "f1": 0.4195804195804196,
+          "fn": 32,
+          "fp": 134,
+          "gene_symbol": "TP53",
+          "precision": 0.30927835051546393,
+          "sensitivity": 0.6521739130434783,
+          "specificity": 0.8320802005012531,
+          "support": 92,
+          "tn": 664,
+          "tp": 60
+        },
+        {
+          "f1": 0.5562130177514792,
+          "fn": 25,
+          "fp": 50,
+          "gene_symbol": "KRAS",
+          "precision": 0.4845360824742268,
+          "sensitivity": 0.6527777777777778,
+          "specificity": 0.9388753056234719,
+          "support": 72,
+          "tn": 768,
+          "tp": 47
+        },
+        {
+          "f1": 0.0,
+          "fn": 25,
+          "fp": 11,
+          "gene_symbol": "HLA-A",
+          "precision": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 0.9872832369942196,
+          "support": 25,
+          "tn": 854,
+          "tp": 0
+        },
+        {
+          "f1": 0.0,
+          "fn": 94,
+          "fp": 48,
+          "gene_symbol": "HLA-B",
+          "precision": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 0.9396984924623115,
+          "support": 94,
+          "tn": 748,
+          "tp": 0
+        },
+        {
+          "f1": 0.0,
+          "fn": 4,
+          "fp": 16,
+          "gene_symbol": "HLA-C",
+          "precision": 0.0,
+          "sensitivity": 0.0,
+          "specificity": 0.981941309255079,
+          "support": 4,
+          "tn": 870,
+          "tp": 0
+        },
+        {
+          "f1": 0.27692307692307694,
+          "fn": 77,
+          "fp": 17,
+          "gene_symbol": "EGFR",
+          "precision": 0.5142857142857142,
+          "sensitivity": 0.18947368421052632,
+          "specificity": 0.9786163522012579,
+          "support": 95,
+          "tn": 778,
+          "tp": 18
+        },
+        {
+          "f1": 0.6577181208053692,
+          "fn": 44,
+          "fp": 7,
+          "gene_symbol": "MYC",
+          "precision": 0.875,
+          "sensitivity": 0.5268817204301075,
+          "specificity": 0.9912170639899623,
+          "support": 93,
+          "tn": 790,
+          "tp": 49
+        },
+        {
+          "f1": 0.4088888888888889,
+          "fn": 52,
+          "fp": 81,
+          "gene_symbol": "BRCA1",
+          "precision": 0.36220472440944884,
+          "sensitivity": 0.46938775510204084,
+          "specificity": 0.8977272727272727,
+          "support": 98,
+          "tn": 711,
+          "tp": 46
+        },
+        {
+          "f1": 0.5220883534136547,
+          "fn": 33,
+          "fp": 86,
+          "gene_symbol": "BRCA2",
+          "precision": 0.4304635761589404,
+          "sensitivity": 0.6632653061224489,
+          "specificity": 0.8914141414141414,
+          "support": 98,
+          "tn": 706,
+          "tp": 65
+        },
+        {
+          "f1": 0.6363636363636364,
+          "fn": 11,
+          "fp": 5,
+          "gene_symbol": "CDKN2A",
+          "precision": 0.7368421052631579,
+          "sensitivity": 0.56,
+          "specificity": 0.9942196531791907,
+          "support": 25,
+          "tn": 860,
+          "tp": 14
+        },
+        {
+          "f1": 0.2843601895734597,
+          "fn": 65,
+          "fp": 86,
+          "gene_symbol": "BRAF",
+          "precision": 0.25862068965517243,
+          "sensitivity": 0.3157894736842105,
+          "specificity": 0.8918238993710692,
+          "support": 95,
+          "tn": 709,
+          "tp": 30
+        },
+        {
+          "f1": 0.25210084033613445,
+          "fn": 84,
+          "fp": 5,
+          "gene_symbol": "MDM2",
+          "precision": 0.75,
+          "sensitivity": 0.15151515151515152,
+          "specificity": 0.9936788874841972,
+          "support": 99,
+          "tn": 786,
+          "tp": 15
+        }
+      ],
+      "reads": 890,
+      "selection_note": "Post-selection mean-base-Q>=30 sensitivity subset of the same sample; no replacement reads or new embeddings",
+      "specificity_scope": "One-versus-rest among sampled target-gene reads only; not genome-wide specificity"
+    }
+  }
+}

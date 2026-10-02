@@ -1,0 +1,14 @@
+{
+  "checkpoint_every": 250,
+  "checkpointing": true,
+  "epochs": 1,
+  "gradient_accumulation": 8,
+  "keep_checkpoints": 2,
+  "learning_rate": 1e-05,
+  "max_run_hours": 13.5,
+  "microbatch": 2,
+  "mps_memory_fraction": 0.6,
+  "seed": 42,
+  "temperature": 0.05,
+  "weight_decay": 0.01
+}

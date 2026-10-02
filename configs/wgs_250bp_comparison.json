@@ -1,0 +1,125 @@
+{
+  "cohort": "wgs_250bp_comparison",
+  "decoding_reference": {
+    "filename": "GRCh38_full_analysis_set_plus_decoy_hla.fa",
+    "md5": null,
+    "sha256": "3b103f4742abfd54938fb0333e19ad067635c8eb86f1dbf0ce44b165c4292b50",
+    "size": 3263683042,
+    "url": "https://1000genomes.s3.amazonaws.com/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa"
+  },
+  "ena_query_url": "https://www.ebi.ac.uk/ena/portal/api/search?result=read_run&query=run_accession%3D%22SRR1295433%22+OR+run_accession%3D%22SRR1295465%22+OR+run_accession%3D%22SRR1295542%22+OR+run_accession%3D%22SRR1295544%22+OR+run_accession%3D%22SRR1295546%22+OR+run_accession%3D%22SRR1295554%22&fields=run_accession%2Cstudy_accession%2Csample_accession%2Clibrary_strategy%2Clibrary_layout%2Cfastq_ftp%2Cfastq_md5%2Cread_count%2Cbase_count&format=tsv&limit=0",
+  "samples": [
+    {
+      "alignment": {
+        "filename": "HG00419.alt_bwamem_GRCh38DH.20150917.CHS.high_coverage.cram",
+        "md5": "1d0115f2c1ff783e6734383b94b80973",
+        "sha256": null,
+        "size": 40045057118,
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/CHS/HG00419/high_cov_alignment/HG00419.alt_bwamem_GRCh38DH.20150917.CHS.high_coverage.cram"
+      },
+      "assembly": "GRCh38DH",
+      "evidence": [
+        {
+          "ena_metadata": {
+            "base_count": "88465521000",
+            "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/003/SRR1295433/SRR1295433_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/003/SRR1295433/SRR1295433_2.fastq.gz",
+            "fastq_md5": "9f2be723cc21cf0ef6a16b030872e64c;888df0c404622a9eee25ed4c949bc8bb",
+            "library_layout": "PAIRED",
+            "library_strategy": "WGS",
+            "read_count": "176931042",
+            "run_accession": "SRR1295433",
+            "sample_accession": "SAMN00006439",
+            "study_accession": "PRJNA260854"
+          },
+          "fastq_prefix_probes": [
+            {
+              "length_histogram": {
+                "250": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/003/SRR1295433/SRR1295433_1.fastq.gz"
+            },
+            {
+              "length_histogram": {
+                "250": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/003/SRR1295433/SRR1295433_2.fastq.gz"
+            }
+          ],
+          "mean_aligned_query_length": 246.4172925654419,
+          "run_accession": "SRR1295433",
+          "source": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/CHS/HG00419/high_cov_alignment/HG00419.alt_bwamem_GRCh38DH.20150917.CHS.high_coverage.bam.bas",
+          "total_reads": 374571085
+        },
+        {
+          "ena_metadata": {
+            "base_count": "94080031500",
+            "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/004/SRR1295554/SRR1295554_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/004/SRR1295554/SRR1295554_2.fastq.gz",
+            "fastq_md5": "2ce115a65fdf822cb323372701fb830d;f4d9d2363c999caac1c2af9810bc18ef",
+            "library_layout": "PAIRED",
+            "library_strategy": "WGS",
+            "read_count": "188160063",
+            "run_accession": "SRR1295554",
+            "sample_accession": "SAMN00006439",
+            "study_accession": "PRJNA260854"
+          },
+          "fastq_prefix_probes": [
+            {
+              "length_histogram": {
+                "250": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/004/SRR1295554/SRR1295554_1.fastq.gz"
+            },
+            {
+              "length_histogram": {
+                "250": 1000
+              },
+              "matches_expected_length": true,
+              "reads_checked": 1000,
+              "scope": "prefix_only",
+              "url": "https://ftp.sra.ebi.ac.uk/vol1/fastq/SRR129/004/SRR1295554/SRR1295554_2.fastq.gz"
+            }
+          ],
+          "mean_aligned_query_length": 246.55351626404695,
+          "run_accession": "SRR1295554",
+          "source": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/CHS/HG00419/high_cov_alignment/HG00419.alt_bwamem_GRCh38DH.20150917.CHS.high_coverage.bam.bas",
+          "total_reads": 397932047
+        }
+      ],
+      "expected_read_length": 250,
+      "format": "cram",
+      "index": {
+        "filename": "HG00419.alt_bwamem_GRCh38DH.20150917.CHS.high_coverage.cram.crai",
+        "md5": "2a950d4236fc808b2a7be7209113191b",
+        "sha256": null,
+        "size": null,
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/CHS/HG00419/high_cov_alignment/HG00419.alt_bwamem_GRCh38DH.20150917.CHS.high_coverage.cram.crai"
+      },
+      "library_strategy": "WGS",
+      "population": "CHS",
+      "sample_id": "HG00419",
+      "statistics": {
+        "filename": "HG00419.alt_bwamem_GRCh38DH.20150917.CHS.high_coverage.bam.bas",
+        "md5": "ac0dbc00f7571c13a7120bbe78428351",
+        "sha256": null,
+        "size": null,
+        "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/data/CHS/HG00419/high_cov_alignment/HG00419.alt_bwamem_GRCh38DH.20150917.CHS.high_coverage.bam.bas"
+      },
+      "status": "selected",
+      "validation_note": "BAS mean length is candidate evidence only; full-file native query length QC is required after download"
+    }
+  ],
+  "schema_version": 1,
+  "selection_note": "One 250-bp WGS test sample, as requested; separate from the two-sample 100-bp WES cohort.",
+  "source_index_sha256": "ca223d97aeaf8e196c51434742a601a1f7ac9bb8089291a8ae1caf8f3afb4001",
+  "source_index_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/1000genomes.high_coverage.GRCh38DH.alignment.index",
+  "decoding_reference_original_url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/reference/GRCh38_reference_genome/GRCh38_full_analysis_set_plus_decoy_hla.fa"
+}
